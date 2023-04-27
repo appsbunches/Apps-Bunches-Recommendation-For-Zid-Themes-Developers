@@ -30,3 +30,16 @@
 * The supported gallery item text color key is ```text_color``` if null we will use white color
 * The supported gallery item buttom background color key is ```button_color``` if null we will use primary color
 
+## Feature Module
+* The supported file names : ```features.twig``` , ```store-features.twig``` , ```features-section.twig```
+* The supported feature items list keys are ```features``` , ```store_features```
+* The supported feature items background color key is ```bg_color``` if null we will use white color
+* The supported feature item image key is ```image``` it must be not null
+* The supported feature item title keys are ```title``` , ```text```
+* The supported feature item description keys are ```des``` , ```desc```
+* The supported feature item text color key is ```text_color``` if null we will use black color
+
+
+
+
+
