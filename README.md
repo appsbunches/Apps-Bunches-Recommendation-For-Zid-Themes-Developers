@@ -40,7 +40,7 @@
 * The supported feature item text color key is ```text_color``` if null we will use black color
 
 ## Products Module
-* The supported file names : ```products.twig``` , ```products-section.twig``` , ```features-section.twig``` , ```product_grid.twig``` ,```top_picks_products.twig``` , ```bestseller-section.twig``` , ```products-selected.twig``` , ```home-featured-products-section.twig```
+* The supported file names : ```products.twig``` , ```offers.twig``` , ```products-section.twig``` , ```features-section.twig``` , ```product_grid.twig``` ,```top_picks_products.twig``` , ```bestseller-section.twig``` , ```products-selected.twig``` , ```home-featured-products-section.twig```
 * The supported products moudule keys are ```products``` , ```last_products```
 * The supported products in the moudule key is ```products```
 * The supported products title key is ```name```
@@ -75,4 +75,9 @@
 * The supported categories display more button key is ```display_more``` it must be boolean if null we will consider it as false
 
 
+## Instagram Moudule
+* The supported file names : ```instagram-gallery.twig``` 
+* The supported main title key is ```title```
+* The supported instagram username account key is ```instagram_account```
+* The supported images list key is ```instagram``` and every object must contains ```image``` and ```url```
 
