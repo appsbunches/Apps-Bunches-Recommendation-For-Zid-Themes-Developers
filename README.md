@@ -59,4 +59,12 @@
 * The supported category display more button key is ```display_more``` it must be boolean if null we will consider it as true
 
 
+## Categories Module
+* The supported file names : ```category-section.twig``` , ```template-velvet-category-section.twig``` , ```home-categories.twig``` , ```categories.twig``` , ```categories_banner.twig``` , ```categories-selected.twig``` , ```home-categories-section.twig```
+* The supported main title keys are ```title``` , ```sectionTitle```
+* The supported sub title key is ```sectionSubTitle```
+* The supported categories display more button key is ```display_more``` it must be boolean if null we will consider it as false
+* The supported more text button key is ```more_text```
+* The supported cateogries items keys are ```categories``` , ```category_items``` but in the last one the catgory oject must be in object named ```item``` 
+
 
