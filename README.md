@@ -73,5 +73,6 @@
 * The supported moudule key is ```products``` and must contains a category object named ```category``` and contains products with list named ```products```
 * The supported main title key is ```title```
 * The supported categories display more button key is ```display_more``` it must be boolean if null we will consider it as false
-* 
+
+
 
