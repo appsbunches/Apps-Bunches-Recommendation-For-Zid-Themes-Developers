@@ -39,6 +39,9 @@
 * The supported feature item description keys are ```des``` , ```desc```
 * The supported feature item text color key is ```text_color``` if null we will use black color
 
+## Products Module
+* The supported file names : ```products.twig``` , ```products-section.twig``` , ```features-section.twig``` , ```product_grid.twig``` ,```top_picks_products.twig``` , ```bestseller-section.twig``` , ```products-selected.twig``` , ```home-featured-products-section.twig```
+* 
 
 
 
