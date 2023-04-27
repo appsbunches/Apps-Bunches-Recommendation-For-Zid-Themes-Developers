@@ -41,8 +41,14 @@
 
 ## Products Module
 * The supported file names : ```products.twig``` , ```products-section.twig``` , ```features-section.twig``` , ```product_grid.twig``` ,```top_picks_products.twig``` , ```bestseller-section.twig``` , ```products-selected.twig``` , ```home-featured-products-section.twig```
-* 
-
+* The supported products moudule keys are ```category``` , ```products``` , ```last_products```
+* The supported products in the moudule key is ```products```
+* The supported products title key is ```name```
+* The supported products display key is ```display``` it must be boolean if null we will consider it as true
+* The supported products url key is ```url```
+* The supported products module type key is ```module_type```
+* The supported products id key is ```id``` it may used if the products related with one category
+* The supported products more butten object key is ```more_button``` and containt the ```text``` and ```url```
 
 
 
