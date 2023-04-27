@@ -19,7 +19,7 @@
 ## Gallery Module
 * The supported file names : ```gallery.twig``` , ```ggallery.twig``` , ```template-velvet-gallery.twig```
 * The supported gallery items list key is ```gallery```
-* The supported gallery title key is ```title```
+* The supported gallery main title key is ```title```
 * The supported gallery item image key is ```image```
 * The supported gallery item link keys are ```url``` , ```link```
 * The supported gallery item title key is ```title```
@@ -28,4 +28,5 @@
 * The supported gallery item show button with border key is ```full_btn_border``` it should be boolean if null we will consider it as false
 * The supported gallery item button title keys are ```btn_text``` , ```button_text``` , ```buttonText```
 * The supported gallery item text color key is ```text_color``` if null we will use white color
-* The supported gallery item buttom background color key is ```button_color``` if null we will use white color
+* The supported gallery item buttom background color key is ```button_color``` if null we will use primary color
+
