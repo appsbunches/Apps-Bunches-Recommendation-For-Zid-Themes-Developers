@@ -65,6 +65,6 @@
 * The supported sub title key is ```sectionSubTitle```
 * The supported categories display more button key is ```display_more``` it must be boolean if null we will consider it as false
 * The supported more text button key is ```more_text```
-* The supported cateogries items keys are ```categories``` , ```category_items``` but in the last one the catgory oject must be in object named ```item``` 
+* The supported cateogries items keys are ```categories``` , ```category_items``` but in the last one the category object must be named with ```item``` 
 
 
