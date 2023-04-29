@@ -94,4 +94,21 @@
 * The supported banner button text color key is ```button_text_color``` if null we will use white color
 * The supported banner button background color key is ```button_bg_color``` if null we will use primary color
 
+## Brand Moudule
+* The supported file names : ```home-brands-section.twig``` , ```home-brands.twig```
+* The supported brand list key is ```brands```
+* The supported brand list title key is ```title```
+* The supported brand item image key is ```image```
+* The supported brand item url keys are ```url``` , ```link```
+
+## Description Moudule 
+* The supported file names : ```store-description.twig```
+* The supported store title key is ```title```
+* The supported store description keys are ```des``` , ```desc``` 
+* The supported social media visibility key is ```display_social_media```
+* The suppotted titkok link key must be as ```tiktok``` in ```items``` in ```social_media``` in ```footer```
+* The suppotted twitter link key must be as ```twitter``` in ```items``` in ```social_media``` in ```footer```
+* The suppotted instagram link key must be as ```instagram``` in ```items``` in ```social_media``` in ```footer```
+* The suppotted facebook link key must be as ```facebook``` in ```items``` in ```social_media``` in ```footer```
+* The suppotted snapchat link key must be as ```snapchat``` in ```items``` in ```social_media``` in ```footer```
 
