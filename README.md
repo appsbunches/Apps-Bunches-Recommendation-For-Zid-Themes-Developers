@@ -10,7 +10,7 @@
 * The supported slider item image keys are ```mobile_image``` , ```image_mobile``` , ```image```
 * The supported slider item vedio keys are ```url``` , ```link```
 * The supported slider item title key is ```title```
-* The supported slider item sub title keys arw ```subtitle``` , ```des```
+* The supported slider item sub title keys are ```subtitle``` , ```des```
 * The supported slider item button title key is ```btn_text```
 * The supported slider item text color key is ```text_color``` if null we will use white color
 * The supported slider item buttom background color key is ```background_color``` if null we will use primary color
@@ -23,8 +23,8 @@
 * The supported gallery item image key is ```image```
 * The supported gallery item link keys are ```url``` , ```link```
 * The supported gallery item title key is ```title```
-* The supported gallery item sub title keys arw ```subtitle``` , ```des```
-* The supported gallery item show button key is ```show_button``` it should be boolean if null we will consider it as true
+* The supported gallery item sub title keys are ```subtitle``` , ```des```
+* The supported gallery item button visibility key is ```show_button``` it should be boolean if null we will consider it as true
 * The supported gallery item show button with border key is ```full_btn_border``` it should be boolean if null we will consider it as false
 * The supported gallery item button title keys are ```btn_text``` , ```button_text``` , ```buttonText```
 * The supported gallery item text color key is ```text_color``` if null we will use white color
@@ -80,4 +80,18 @@
 * The supported main title key is ```title```
 * The supported instagram username account key is ```instagram_account```
 * The supported images list key is ```instagram``` and every object must contains ```image``` and ```url```
+
+## Banner Moudule
+* The supported file names : ```banner.twig``` , ```large-banner.twig``` , ```big-banner.twig```
+* The supported banner image keys are ```mobile_image``` , ```image_mobile``` , ```image```
+* The supported banner link keys are ```url``` , ```link```
+* The supported banner background color key is ```color``` if null we will use white color
+* The supported banner title key is ```title```
+* The supported banner sub title keys are ```subtitle``` , ```des``` , ```desc```
+* The supported banner title text color key is ```text_color``` if null we will use white color
+* The supported banner button visibility key is ```show_button``` it should be boolean if null we will consider it as true
+* The supported banner button title keys are ```button_text``` , ```button```
+* The supported banner button text color key is ```button_text_color``` if null we will use white color
+* The supported banner button background color key is ```button_bg_color``` if null we will use primary color
+
 
