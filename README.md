@@ -136,4 +136,6 @@
 * The supported partner item image key is ```image```
 * The supported partner url image keys are ```url``` , ```link```
 
+## Video Moudule
+* The supported file names : ```video.twig```
 
