@@ -17,7 +17,7 @@
 * The supported slider item link key are ```url``` , ```link```
 
 ## Gallery Module
-* The supported file names : ```gallery.twig``` , ```ggallery.twig``` , ```template-velvet-gallery.twig```
+* The supported file names : ```gallery.twig``` , ```ggallery.twig``` , ```template-velvet-gallery.twig``` , ```home-banners-section.twig```
 * The supported gallery items list keys are ```gallery``` , ```ads```
 * The supported gallery main title key is ```title```
 * The supported gallery item image key is ```image```
@@ -114,8 +114,26 @@
 
 ## FAQs Moudule
 * The supported file names : ```home-faqs-section.twig```
-* The supported FAQs list key is ```faqs_store_features``` and every object should contins ```title``` and ```answer```
-* The supported background color key is ```details_bg``` if null we will use white color
-* The supported video image key is ```details_video_img```
-* The supported title key is ```details_title```
-* The supported description key is ```details_desc```
+* The supported FAQs list key is ```faqs_store_features``` and every object should contains ```title``` and ```answer```
+* The supported FAQs background color key is ```details_bg``` if null we will use white color
+* The supported FAQs video image key is ```details_video_img```
+* The supported FAQs video url key is ```details_video``` should be a youtube video url
+* The supported FAQs title key is ```details_title```
+* The supported FAQs description key is ```details_desc```
+
+## Testimonials Moudule
+* The supported file names : ```testimonials.twig``` , ```home-reviews-section.twig``` , ```home-testimonials-section.twig```
+* The supported testimonials list keys are ```testimonials``` , ```testimonial``` , ```reviews```
+* The supported main title keys are ```title``` , ```title_offer``` , ```sectionTitle```
+* The supported testimonial item title keys are ```name``` , ```client_name``` , ```customer_name``` , ```customerName```
+* The supported testimonial item date key is ```date```
+* The supported testimonial item title keys are ```text``` , ```reviews``` , ```client_opinion``` , ```content``` , ```customerReview```
+
+## Partners Moudule
+* The supported file names : ```partners.twig```
+* The supported partners list key is ```store_partners```
+* The supported main title key is ```title```
+* The supported partner item image key is ```image```
+* The supported partner url image keys are ```url``` , ```link```
+
+
