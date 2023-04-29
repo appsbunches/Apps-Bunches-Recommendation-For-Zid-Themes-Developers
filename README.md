@@ -18,7 +18,7 @@
 
 ## Gallery Module
 * The supported file names : ```gallery.twig``` , ```ggallery.twig``` , ```template-velvet-gallery.twig```
-* The supported gallery items list key is ```gallery```
+* The supported gallery items list keys are ```gallery``` , ```ads```
 * The supported gallery main title key is ```title```
 * The supported gallery item image key is ```image```
 * The supported gallery item link keys are ```url``` , ```link```
@@ -112,3 +112,10 @@
 * The suppotted facebook link key must be as ```facebook``` in ```items``` in ```social_media``` in ```footer```
 * The suppotted snapchat link key must be as ```snapchat``` in ```items``` in ```social_media``` in ```footer```
 
+## FAQs Moudule
+* The supported file names : ```home-faqs-section.twig```
+* The supported FAQs list key is ```faqs_store_features``` and every object should contins ```title``` and ```answer```
+* The supported background color key is ```details_bg``` if null we will use white color
+* The supported video image key is ```details_video_img```
+* The supported title key is ```details_title```
+* The supported description key is ```details_desc```
