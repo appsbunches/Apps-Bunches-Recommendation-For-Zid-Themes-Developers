@@ -16,6 +16,10 @@
 * The supported slider item buttom background color key is ```background_color``` if null we will use primary color
 * The supported slider item link key are ```url``` , ```link```
 
+<img width="1038" alt="image" src="https://user-images.githubusercontent.com/45198998/236615746-a8c80237-3618-4408-8eb3-6099881df4dc.png">
+
+
+
 ## Gallery Module
 * The supported file names : ```gallery.twig``` , ```ggallery.twig``` , ```template-velvet-gallery.twig``` , ```home-banners-section.twig```
 * The supported gallery items list keys are ```gallery``` , ```ads```
