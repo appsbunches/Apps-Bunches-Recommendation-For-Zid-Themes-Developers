@@ -34,6 +34,9 @@
 * The supported gallery item text color key is ```text_color``` if null we will use white color
 * The supported gallery item buttom background color key is ```button_color``` if null we will use primary color
 
+<img width="1036" alt="image" src="https://user-images.githubusercontent.com/45198998/236616979-4d898944-0562-4323-8a80-1978558a8c5e.png">
+
+
 ## Feature Module
 * The supported file names : ```features.twig``` , ```store-features.twig``` , ```features-section.twig```
 * The supported feature items list keys are ```features``` , ```store_features```
@@ -84,6 +87,9 @@
 * The supported main title key is ```title```
 * The supported instagram username account key is ```instagram_account```
 * The supported images list key is ```instagram``` and every object must contains ```image``` and ```url```
+
+<img width="1035" alt="image" src="https://user-images.githubusercontent.com/45198998/236616926-82a7a11a-a658-4b42-aa0d-5a1519ae79d3.png">
+
 
 ## Banner Moudule
 * The supported file names : ```banner.twig``` , ```large-banner.twig``` , ```big-banner.twig```
