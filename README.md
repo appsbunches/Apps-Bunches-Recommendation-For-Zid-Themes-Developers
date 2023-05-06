@@ -4,7 +4,7 @@
 
 ## Slider Module
 * The supported file names : ```main-slider.twig``` , ```main_slider2.twig``` , ```slider.twig``` , ```sslider.twig``` , ```img-slider.twig``` , ```templete-velvet-main-slider.twig```
-* The supported slider items list key is ```slider```
+* The supported slider items list key is ```slider```store-description.twig
 * The supported slider items hide dots key is ```hide_dots``` it should be boolean if null we will consider it as true
 * The supported slider item type key is ```type``` it must be ```video``` or ```image``` if null we will consider it an image
 * The supported slider item image keys are ```mobile_image``` , ```image_mobile``` , ```image```
@@ -138,4 +138,13 @@
 
 ## Video Moudule
 * The supported file names : ```video.twig```
+* The supported video url key is ```video```
+* The supported control buttons visibility key is ```controls```
+* The supported auto play key is ```autoplay``` it should be boolean if null we will consider it as false
+* The supported main title key is ```title```
+
+## Countdown Moudule
+* The supported file names : ```countdown_banner.twig```
+* The supported countdown date key is ```countdownDate```
+* The supported countdown banner key is ```countdownImage``` it should be a list of object named ```image```
 
