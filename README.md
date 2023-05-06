@@ -46,16 +46,22 @@
 * The supported feature item description keys are ```des``` , ```desc```
 * The supported feature item text color key is ```text_color``` if null we will use black color
 
+<img width="1039" alt="image" src="https://user-images.githubusercontent.com/45198998/236617275-a60262c6-1fda-4b9c-8aa2-2086b8e8dc3c.png">
+
+
 ## Products Module
 * The supported file names : ```products.twig``` , ```offers.twig``` , ```products-section.twig``` , ```features-section.twig``` , ```product_grid.twig``` ,```top_picks_products.twig``` , ```bestseller-section.twig``` , ```products-selected.twig``` , ```home-featured-products-section.twig```
 * The supported products moudule keys are ```products``` , ```last_products```
-* The supported products in the moudule key is ```products```
+* The supported products list in the moudule key is ```products```
 * The supported products title key is ```name```
 * The supported products display key is ```display``` it must be boolean if null we will consider it as true
 * The supported products url key is ```url```
 * The supported products module type key is ```module_type```
 * The supported products id key is ```id``` it may used if the products related with one category
 * The supported products more button object key is ```more_button``` and contains the ```text``` and ```url```
+
+<img width="1086" alt="image" src="https://user-images.githubusercontent.com/45198998/236617803-3ab62113-25e2-44b3-ae35-dc12a5781c78.png">
+<img width="1102" alt="image" src="https://user-images.githubusercontent.com/45198998/236618576-ec0e6fdd-1cea-4afc-8342-898edf0bb535.png">
 
 ## Category Module
 * The supported file names : ```category-products-section.twig``` , ```home-category-products.twig``` , ```home-products-section.twig```
@@ -64,6 +70,8 @@
 * The supported category name key is ```name```
 * The supported products in the moudule key is ```products```
 * The supported category display more button key is ```display_more``` it must be boolean if null we will consider it as true
+
+<img width="1101" alt="image" src="https://user-images.githubusercontent.com/45198998/236617910-a5d36428-c604-4971-b0f1-082346435de9.png">
 
 
 ## Categories Module
@@ -111,6 +119,9 @@
 * The supported brand item image key is ```image```
 * The supported brand item url keys are ```url``` , ```link```
 
+<img width="1106" alt="image" src="https://user-images.githubusercontent.com/45198998/236624662-0af9a0dd-88fb-4040-bdef-a3eeb2332ce6.png">
+
+
 ## Description Moudule 
 * The supported file names : ```store-description.twig```
 * The supported store title key is ```title```
@@ -122,6 +133,9 @@
 * The suppotted facebook link key must be as ```facebook``` in ```items``` in ```social_media``` in ```footer```
 * The suppotted snapchat link key must be as ```snapchat``` in ```items``` in ```social_media``` in ```footer```
 
+<img width="1097" alt="image" src="https://user-images.githubusercontent.com/45198998/236625722-e60bb15a-bebf-4530-8cef-8c2213f8ab32.png">
+
+
 ## FAQs Moudule
 * The supported file names : ```home-faqs-section.twig```
 * The supported FAQs list key is ```faqs_store_features``` and every object should contains ```title``` and ```answer```
@@ -131,6 +145,9 @@
 * The supported FAQs title key is ```details_title```
 * The supported FAQs description key is ```details_desc```
 
+<img width="1097" alt="image" src="https://user-images.githubusercontent.com/45198998/236624954-d0f3cb0e-4fb4-4fba-b4cf-28dd8bdd52c6.png">
+
+
 ## Testimonials Moudule
 * The supported file names : ```testimonials.twig``` , ```home-reviews-section.twig``` , ```home-testimonials-section.twig```
 * The supported testimonials list keys are ```testimonials``` , ```testimonial``` , ```reviews```
@@ -139,12 +156,18 @@
 * The supported testimonial item date key is ```date```
 * The supported testimonial item title keys are ```text``` , ```reviews``` , ```client_opinion``` , ```content``` , ```customerReview```
 
+<img width="1105" alt="image" src="https://user-images.githubusercontent.com/45198998/236625663-4490817c-0668-4cec-a314-de8a4aba6e88.png">
+
+
 ## Partners Moudule
 * The supported file names : ```partners.twig```
 * The supported partners list key is ```store_partners```
 * The supported main title key is ```title```
 * The supported partner item image key is ```image```
 * The supported partner url image keys are ```url``` , ```link```
+
+<img width="1101" alt="image" src="https://user-images.githubusercontent.com/45198998/236625570-b49ff53d-d5d3-4547-9b63-374e42a54a05.png">
+
 
 ## Video Moudule
 * The supported file names : ```video.twig```
