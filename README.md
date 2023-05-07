@@ -80,7 +80,9 @@
 * The supported sub title key is ```sectionSubTitle```
 * The supported categories display more button key is ```display_more``` it must be boolean if null we will consider it as false
 * The supported more text button key is ```more_text```
-* The supported cateogries items keys are ```categories``` , ```category_items``` but in the last one the category object must be named with ```item``` 
+* The supported cateogries items keys are ```categories``` , ```category_items``` the first one the category object must be named with ```category``` but in the last one the category object must be named with ```item``` 
+
+<img width="1100" alt="image" src="https://user-images.githubusercontent.com/45198998/236676289-aca039f5-1f09-462e-8e2a-b2de653262a8.png">
 
 
 ## Categories with Products Module
@@ -111,6 +113,9 @@
 * The supported banner button title keys are ```button_text``` , ```button```
 * The supported banner button text color key is ```button_text_color``` if null we will use white color
 * The supported banner button background color key is ```button_bg_color``` if null we will use primary color
+
+<img width="1100" alt="image" src="https://user-images.githubusercontent.com/45198998/236676630-7659d407-a90b-42c5-bb88-e7249c8861f1.png">
+
 
 ## Brand Moudule
 * The supported file names : ```home-brands-section.twig``` , ```home-brands.twig```
