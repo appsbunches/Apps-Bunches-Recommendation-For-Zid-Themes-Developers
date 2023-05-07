@@ -176,6 +176,9 @@
 * The supported auto play key is ```autoplay``` it should be boolean if null we will consider it as false
 * The supported main title key is ```title```
 
+<img width="1096" alt="image" src="https://user-images.githubusercontent.com/45198998/236626449-c2f888fc-765f-4188-aa85-8aab2e7d0425.png">
+
+
 ## Countdown Moudule
 * The supported file names : ```countdown_banner.twig```
 * The supported countdown date key is ```countdownDate```
