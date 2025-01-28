@@ -159,8 +159,9 @@
 ## Testimonials Moudule
 * The supported file names : ```testimonials.twig``` , ```home-reviews-section.twig``` , ```home-testimonials-section.twig```
 * The supported testimonials list keys are ```testimonials``` , ```testimonial``` , ```reviews```
-* The supported main title keys are ```title``` , ```title_offer``` , ```sectionTitle```
-* The supported testimonial item title keys are ```name``` , ```client_name``` , ```customer_name``` , ```customerName```
+* The supported main description keys are ```des``` , ```desc```, ```sub_title``` , ```banner_des```
+* The supported main title keys are ```title``` , ```title_offer``` , ```sectionTitle``` , ```banner_title```
+* The supported testimonial item title keys are ```name``` , ```client_name``` , ```customer_name``` , ```customerName``` , ```author```
 * The supported testimonial item date key is ```date```
 * The supported testimonial item title keys are ```text``` , ```reviews``` , ```client_opinion``` , ```content``` , ```customerReview```
 
@@ -180,10 +181,10 @@
 
 ## Video Moudule
 * The supported file names : ```video.twig```
-* The supported video url key is ```video```
-* The supported control buttons visibility key is ```controls```
-* The supported auto play key is ```autoplay``` it should be boolean if null we will consider it as false
-* The supported main title key is ```title```
+* The supported video url key is ```video``` , ```banner_video```
+* The supported control buttons visibility key is ```controls``` , ```banner_controls```
+* The supported auto play key is ```autoplay``` , ```banner_autoplay``` it should be boolean if null we will consider it as false
+* The supported main title key is ```title``` , ```banner_title```
 
 <img width="1096" alt="image" src="https://user-images.githubusercontent.com/45198998/236626449-c2f888fc-765f-4188-aa85-8aab2e7d0425.png">
 
