@@ -616,8 +616,40 @@ OR
 * The supported partner item image key is ```image``` , ```img```
 * The supported partner url image keys are ```url``` , ```link```
 
-<img width="1101" alt="image" src="https://user-images.githubusercontent.com/45198998/236625570-b49ff53d-d5d3-4547-9b63-374e42a54a05.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "73d6a6af-58df-4f99-8317-10def6c52d6£",
+            "storefront_theme_store_id": "e57a0654-7476-428b-bO3b-db15c8bd9£41",
+            "storefront_theme_file_id": "80f8bf58-6626-4bd3-a8be-80c9b2ff5018",
+            "settings": {
+                "title": " الشركاء",
+                "store_partners": [
+                    {
+                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47f9-821d-834777a00a27.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47f9-821d-834777a00a27.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47£9-821d-834777a00a27.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47f9-821d-834777a00a27.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47£9-821d-834777a00a27.png"
+                    }
+                ],
+                "order": 7,
+                "hide_dots": false
+            },
+            "is_draft": 0
+        }
+    ]
+}
+```
 
 ## Video Moudule
 * The supported file names : ```video.twig```
@@ -626,8 +658,28 @@ OR
 * The supported auto play key is ```autoplay``` , ```banner_autoplay``` it should be boolean if null we will consider it as false
 * The supported main title key is ```title``` , ```banner_title```
 
-<img width="1096" alt="image" src="https://user-images.githubusercontent.com/45198998/236626449-c2f888fc-765f-4188-aa85-8aab2e7d0425.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "c792aa28-6e83-4110-80ae-0b0a649e2ae8",
+            "storefront_theme_store_id": "41460ab1-bbbf-4c59-bb06-542575a4e59a",
+            "storefront_theme_file_id": "f78a572a-9d51-4f02-a400-eabd818f69f7",
+            "settings": {
+                "title": "فيديو تجريبي",
+                "video": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/9cb4dabe-8624-4b93-9368-0f4bb89c629c.mp4",
+                "controls": true,
+                "order": 11,
+                "autoplay": false
+            },
+            "is_draft": 0,
+            "draft_for": null,
+            "is_deleted": 0,
+            "created _at": "2023-05-06T13:12:25.000000Z",
+            "updated_at": "2023-05-06T13:12:52. 000000Z"
+        ]
+    }
+```
 
 ## Countdown Moudule
 * The supported file names : ```countdown_banner.twig```
