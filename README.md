@@ -1,7 +1,7 @@
 # Apps Bunches Recommendations for Zid Theme Developers
 
 ## Overview
-* This document outlines the best practices and supported file structures for integrating Zid themes with the Apps Bunches mobile application. By following these recommendations, developers can ensure optimal compatibility, functionality, and user experience.
+* This document outlines the best practices and supported file structures for integrating Zid themes with the Apps Bunches mobile application [App Link](https://apps.zid.sa/application/421). By following these recommendations, developers can ensure optimal compatibility, functionality, and user experience.
 
 ## Slider Module
 * The supported file names : ```main-slider.twig``` , ```main_slider2.twig``` , ```slider.twig``` , ```sslider.twig``` , ```img-slider.twig``` , ```templete-velvet-main-slider.twig``` , ```slider_img.twig```
@@ -695,4 +695,6 @@ OR
 * The supported icon box title key is ```title```
 * The supported icon box description key is ```description```
 
-
+# This guide ensures that Zid theme developers follow structured naming conventions and keys for seamless integration with the Apps Bunches mobile app.
+* Following these guidelines will lead to a smoother development process and an optimized end-user experience.
+* If you have any inquiries, feel free to contact us directly via email at Dev@AppsBunches.com
