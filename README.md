@@ -1,6 +1,7 @@
-# Apps Bunches Recommendation For Zid Themes Developers
+# Apps Bunches Recommendations for Zid Theme Developers
 
-## The following tips are the best way to make your theme compatible with apps bunches mobile app
+## Overview
+* This document outlines the best practices and supported file structures for integrating Zid themes with the Apps Bunches mobile application. By following these recommendations, developers can ensure optimal compatibility, functionality, and user experience.
 
 ## Slider Module
 * The supported file names : ```main-slider.twig``` , ```main_slider2.twig``` , ```slider.twig``` , ```sslider.twig``` , ```img-slider.twig``` , ```templete-velvet-main-slider.twig``` , ```slider_img.twig```
@@ -16,7 +17,44 @@
 * The supported slider item buttom background color key is ```background_color``` if null we will use primary color
 * The supported slider item link key are ```url``` , ```link``` , ```url_button``` , ```video_link```
 
-<img width="1038" alt="image" src="https://user-images.githubusercontent.com/45198998/236615746-a8c80237-3618-4408-8eb3-6099881df4dc.png">
+```
+{
+  "modules": [
+    {
+      "id": "406b63d8-e1a5-46bb-9a95-089826d78f84",
+      "storefront_theme_store_id": "41460ab1-bbbf-4c59-bb06-542575a4e59a",
+      "storefront_theme_file_id": "7fe32e1d-f0c3-4c6c-ab5f-d3047494a91b",
+      "settings": {
+        "slider": [
+          {
+            "title": "عنوان على الصورة",
+            "des": "النص على الصورة",
+            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/ff65a529-b3e4-4f67-9afe-22dad83ed131.png",
+            "url": "/products/1-النباتات-الاكسسوارات"
+          },
+          {
+            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/73c86dc9-0709-46f7-8dce-21b947c0b861.png",
+            "url": "/products/عمال-الطاقة-الطبيعي-للنساء"
+          },
+          {
+            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/0e1bb51b-9310-49e3-958e-24a839a6ac3b.png"
+          }
+        ],
+        "background_color": "#ff6c40",
+        "text_color": "#fff5f5",
+        "order": 0,
+        "hide_dots": false
+      },
+      "is_draft": 0,
+      "draft_for": null,
+      "is_deleted": 0,
+      "created_at": "2022-04-10T23:33:45.000000Z",
+      "updated_at": "2023-05-06T09:25:46.000000Z"
+    }
+  ]
+}
+
+```
 
 
 
@@ -34,7 +72,49 @@
 * The supported gallery item text color key is ```text_color``` , ```textColor``` if null we will use white color
 * The supported gallery item buttom background color key is ```button_color``` if null we will use primary color
 
-<img width="1036" alt="image" src="https://user-images.githubusercontent.com/45198998/236616979-4d898944-0562-4323-8a80-1978558a8c5e.png">
+```
+{
+  "modules": [
+    {
+      "id": "205e9d90-acf2-4123-ab70-0678f513d2c2",
+      "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2a",
+      "storefront_theme_file_id": "472f4d3f-944d-4b66-89c1-a5fc300bcaea",
+      "settings": {
+        "gallery": [
+          {
+            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/fd3631ed-0a8e-40c1-a84c-8489a6f221cb.jpg",
+            "title": "Abdallah Test Abdallah Test Abdallah Test Abdallah Test Abdallah Test Abdallah Test Abdallah Test ",
+            "subtitle": "Test ",
+            "text_color": "#ffffff",
+            "show_button": true,
+            "full_btn_border": true,
+            "button_text": "Abdallah Button Abdallah Button Abdallah Button Abdallah Button ",
+            "button_color": "#ff0000",
+            "url": "/products/عبدالله-تست"
+          },
+          {
+            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/5470e58d-4964-47be-b8b4-14c5259c1cd3.jpg",
+            "title": "Turki",
+            "subtitle": "Turki Description",
+            "text_color": "#ffffff",
+            "show_button": true,
+            "full_btn_border": true,
+            "button_text": "Turki Button",
+            "button_color": "#2500ff",
+            "url": "/products/محمود-:-)"
+          },
+          {
+            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/73ce1bd7-45bf-4c57-b217-73d1599b371e.jpg",
+            "title": "Hosam",
+            "subtitle": "Test"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```
 
 
 ## Feature Module
