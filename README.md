@@ -126,7 +126,43 @@
 * The supported feature item description keys are ```des``` , ```desc```
 * The supported feature item text color key is ```text_color``` if null we will use black color
 
-<img width="1039" alt="image" src="https://user-images.githubusercontent.com/45198998/236617275-a60262c6-1fda-4b9c-8aa2-2086b8e8dc3c.png">
+```
+{
+    "modules": [
+        {
+            "id": "8392e220-494a-452b-8081-4c{2525eed0e",
+            "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2a",
+            "storefront_theme_file_id": "f8cca0fb-1b0d-45c4-a005-429a192f1793",
+            "settings": {
+                "features": [
+                    {
+                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/0df62d8f-5204-4d4b-b70b-2e1a5ae4862e.png",
+                        "text": "طرق دفع متعددة",
+                        "text_color": "#ff0000"
+                    },
+                    {
+                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/48688ef9-8e4f-4f03-909f-7b4327b338af.png",
+                        "text": "شحن سريع",
+                        "text_color": "#5aff89"
+                    },
+                    {
+                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/d86edf82-b998-4d66-bf62-346a20505fe8.png",
+                        "ضمان بعد الشراء": "text",
+                        "text_color": "#f4e32f"
+                    }
+                ],
+                "bg_color": "#481229",
+                "order": 11
+            },
+            "is_draft": 0,
+            "draft_for": null,
+            "is_deleted": 0,
+            "created_at": "2022-05-25T07:57:44. 000000Z",
+            "updated_at": "2022-09-03T17:28:46.000000Z",
+        }
+    ]
+}
+```
 
 
 ## Products Module
