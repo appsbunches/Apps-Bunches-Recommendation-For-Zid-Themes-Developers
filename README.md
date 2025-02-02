@@ -176,9 +176,82 @@
 * The supported products id key is ```id``` it may used if the products related with one category
 * The supported products more button object key is ```more_button``` and contains the ```text``` and ```url```
 
-<img width="1086" alt="image" src="https://user-images.githubusercontent.com/45198998/236617803-3ab62113-25e2-44b3-ae35-dc12a5781c78.png">
-<img width="1102" alt="image" src="https://user-images.githubusercontent.com/45198998/236618576-ec0e6fdd-1cea-4afc-8342-898edf0bb535.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "81373ec6-8590-4141-b9da-944f4f902036",
+            "storefront_theme_store_id": "93baacfe-19ee-4c66-a3da-9c5f702aaed3",
+            "storefront_theme_file_id": "7de183cb-df6b-411f-b3f5-7f65f6ac7d",
+            "settings": {
+                "title": "منتجات متميزة",
+                "products": [
+                    {
+                        "product": {}
+                    },
+                    {
+                        "product": {}
+                    },
+                    {
+                        "product": {}
+                    }
+                ],
+                "display_more": true,
+                "more_text": "استكشف المزيد ",
+                "order": 7
+            },
+            "is_draft": 0,
+            "draft_for": null,
+            "is_deleted": 0,
+            "created_at": "2022-08-18T08:40:49.000000Z",
+            "updated_at": "2022-08-18T08:41:49.000000Z"
+        }
+    ]
+}
+```
+OR
+```
+{
+    "modules": [
+        {
+            "id": "c8a997d6-dd0b-452e-ac69-7b71a776a940",
+            "storefront_theme_store_id": "e63cOadb-5f1d-44cb-9e48-4be4b4065a2a",
+            "storefront_theme_file_id": "d414294d-5b0f-4606-9611-32b8cebb5£64",
+            "settings": {
+                "title": "منتجات عليها عروض",
+                "products": {
+                    "products": [],
+                    "module_type": "sale_products"
+                },
+                "display_more": true,
+                "more_text": " عرض الكل عرض الكل عرض الكل",
+                "order": 12
+            },
+            "is_draft": 0,
+            "draft_for": null,
+            "is_deleted": 0,
+            "created_at": "2022-05-29T09:33:27.000000Z",
+            "updated_at": "2023-02-11T19:01:03.000000Z"
+        },
+        {
+            "id": "e087fa5d-1475-4bd0-be5c-5a58ee2bddc6",
+            "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2a",
+            "storefront_theme_file_id": "d414294d-5b0£-4606-9611-32b8cebb5£64",
+            "settings": {
+                "title": " منتجات عبد الله",
+                "products": {
+                    "products": [],
+                    "url": "/categories/384063/",
+                    "module_type": "products_category"
+                },
+                "more_text": " المزيد المزيد المزيد",
+                "order": 9,
+                "display_more": false
+            }
+        }
+    ]
+}
+```
 ## Category Module
 * The supported file names : ```category-products-section.twig``` , ```home-category-products.twig``` , ```home-products-section.twig```
 * The supported catgory moudule key is ```category```
@@ -187,8 +260,41 @@
 * The supported products in the moudule key is ```products```
 * The supported category display more button key is ```display_more``` it must be boolean if null we will consider it as true
 
-<img width="1101" alt="image" src="https://user-images.githubusercontent.com/45198998/236617910-a5d36428-c604-4971-b0f1-082346435de9.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "2137bd1c-6094-49ff-9641-953c5b31a3db",
+            "storefront_theme_store_id": "41460ab1-bbbf-4c59-bb06-542575a4e59a",
+            "storefront_theme_file_id": "Ob0db37a-7a94-478b-ab8f-bde1912736e2",
+            "settings": {
+                "category": {
+                    "id": 361590,
+                    "name": "حلاوة المانوكا",
+                    "حلاوة- المانوكا ": "slug",
+                    "SE0_category_title": "حلاوة المانوكا",
+                    "SE0_category_description": "حلاوة المانوكا",
+                    "description": null,
+                    "url": "https://1du1fk.zidthemestore.com/categories/361590/LejLaJI=ögX",
+                    "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/eaa78£77-17e3-4ed9-85d£-24e96312d66b-260x260.png",
+                    "image_full_size": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/eaa78f77-17e3-4ed9-85df-24e96312d66b.png",
+                    "img_alt_text": null,
+                    "cover_image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/38514574-a5e6-4cda-a5b1-310699548f42.png",
+                    "products_count": 0,
+                    "sub_categories": [],
+                    "parent_id": null,
+                    "is_published": true,
+                    "products": [],
+                    "module_type": "category_products"
+                },
+                "display_more": true,
+                "more_text": "عرض الكل",
+                "order": 5
+            }
+        }
+    ]
+}
+```
 
 ## Categories Module
 * The supported file names : ```category-section.twig``` , ```template-velvet-category-section.twig``` , ```home-categories.twig``` , ```categories.twig``` , ```categories_banner.twig``` , ```categories-selected.twig``` , ```home-categories-section.twig```
@@ -198,8 +304,42 @@
 * The supported more text button key is ```more_text```
 * The supported cateogries items keys are ```categories``` , ```category_items``` the first one the category object must be named with ```category``` but in the last one the category object must be named with ```item``` 
 
-<img width="1100" alt="image" src="https://user-images.githubusercontent.com/45198998/236676289-aca039f5-1f09-462e-8e2a-b2de653262a8.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "728919e8-d1b9-4ead-8fa8-def9d4525e69",
+            "storefront_theme_store_id": "41460ab1-bbbf-4c59-bb06-542575a4e59a",
+            "storefront_theme_file_id": "572bc314-d75d-4781-88ea-3562b8а4420c",
+            "settings": {
+                "title": "أحدث التصنيفات",
+                "categories": [
+                    {
+                        "category": {},
+                    },
+                    {
+                        "category": {},
+                    },
+                    {
+                        "category": {
+                            "id": 361591,
+                            "name": " بخاخ المانوكا",
+                            "slug": "بخاخ - المانوكا",
+                            "SEO_category_title": "بخاخ المانوكا",
+                            "SE0_category_description": "بخاخ المانوكا",
+                            "description": null,
+                            "uz1": "https://1du1fk.zidthemestore.com/categories/361591/بخاخ - المانوكا",
+                            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/{1d87001-5e0c-478d-be82-fa426bbc4192-260x260.png",
+                            "image_full_size": "https://media.zid.store/b2d{7841-8071-401e-8883-77C9cb7cd9a1/{1d87001-5e0c-478d-be82-fa426bbc4192.png",
+                            "img_alt_text": null
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
 
 ## Categories with Products Module
 * The supported file names : ```product-category.twig``` , ```home-tabs-section.twig```
