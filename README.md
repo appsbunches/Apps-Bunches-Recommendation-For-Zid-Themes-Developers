@@ -354,8 +354,44 @@ OR
 * The supported instagram username account key is ```instagram_account```
 * The supported images list key is ```instagram``` and every object must contains ```image``` and ```url```
 
-<img width="1035" alt="image" src="https://user-images.githubusercontent.com/45198998/236616926-82a7a11a-a658-4b42-aa0d-5a1519ae79d3.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "Oc4cbf90-efd5-49cb-b515-b5554f2f2b59",
+            "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2a",
+            "storefront_theme_file_id": "42d1455a-b2bf-49b7-b796-ebfe7d704876",
+            "settings": {
+                "title": "تسوق عبر الانتستجرام",
+                "instagram_account": "teejangold",
+                "instagram": [
+                    {
+                        "image": "https://media.zid.store/b2d{7841-8071-401e-8883-77c9cb7cd9a1/9035ffbd-f85f-4691-b837-b76e0807b673.jpg",
+                        "urI": "/shipping-and-payment"
+                    },
+                    {
+                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/093f362b-36de-4516-9de0-b68e16b3ab1d.jpg",
+                        "url": "/faqs"
+                    },
+                    {
+                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/£d3631ed-Oa8e-40c1-a84c-8489a6f221cb.jpg",
+                        "url": "https://www.instagram.com/teejangold/"
+                    },
+                    {
+                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/48688ef9-8e4f-4f03-909f-7b4327b338af.png",
+                        "url": "https://www.youtube.com/"
+                    },
+                    {
+                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/cc903a96-f2e9-48b8-9bd9-c5488d44c0c9.jpg",
+                        "ur1": "/categories/445886/ .٣-محمود",
+                        "order": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
 
 ## Banner Moudule
 * The supported file names : ```banner.twig``` , ```large-banner.twig``` , ```big-banner.twig``` , ```image-with-text.twig``` , ```banner_img.twig```
@@ -370,8 +406,36 @@ OR
 * The supported banner button text color key is ```button_text_color``` , ```btn_text_color``` if null we will use white color
 * The supported banner button background color key is ```button_bg_color``` , ```button_color``` , ```btn_background_color``` if null we will use primary color
 
-<img width="1100" alt="image" src="https://user-images.githubusercontent.com/45198998/236676630-7659d407-a90b-42c5-bb88-e7249c8861f1.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "432c7989-6b9a-4833-8d19-ab81383365a2",
+            "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2а",
+            "storefront_theme_file_id": "901c0446-2be9-4fc7-ac76-1af6а5585182",
+            "settings": {
+                "text_position_right": true,
+                "title": "Abdallah Abdallah Abdallah ",
+                "subtitle": "Much of the QA",
+                "text_color":"#ffffff",
+                "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/54526c45-e854-4fa6-8180-d8d57b410ee9.jpg",
+                "mobile_image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/{d3631ed-Oa8e-40c1-a84c-8489a6{221cb.jpg",
+                "show_button": true,
+                "button_text": "اضغط هنا",
+                "button_bg_color": "#ff0000",
+                "button_text_color": "#d1bffe",
+                "url": "/categories/361591/ بخاخ - المانوك",
+                "order": 2,
+                "is_draft": 0,
+                "draft_for": null,
+                "is_deleted": 0,
+                "created_at": "2022-05-25T07:28:24.000000z",
+                "updated_at": "2022-09-03T17:28:46.000000Z"
+            }
+        }
+    ]
+}
+```
 
 ## Brand Moudule
 * The supported file names : ```home-brands-section.twig``` , ```home-brands.twig```
@@ -381,8 +445,49 @@ OR
 * The supported brand item title key is ```title```
 * The supported brand item url keys are ```url``` , ```link``` , ```url_button``` , ```video_link```
 
-<img width="1106" alt="image" src="https://user-images.githubusercontent.com/45198998/236624662-0af9a0dd-88fb-4040-bdef-a3eeb2332ce6.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "02e4652e-7£55-457-bb78-4d298cfce7£4",
+            "storefront_theme_store_id": "98fafeb0-5811-4c3f-8eef-8£91123aa2b9",
+            "storefront_theme_file_id": "Oc270de5-5ecc-49c5-abaa-b585fe10cd13",
+            "settings": {
+                "bg_color": "#ffffff",
+                "brands": [
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/dbaad4a3-9869-4£71-8fc2-d6067b£b27£7.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/9db7c6ce-1359-4db3-a1d8-2508c6b32187.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/6ff6e659-b6ab-4aec-ad9c-06ab266013ce.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/b4e34a34-c415-4421-8ee3-01086851cfae.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/a08cd79d-654a-4ece-9067-1be25fed5972.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/6e62cd9c-1a17-4d05-9370-46a875a73f99.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/8d1fd70e-053c-46dd-a36c-13d9fa652269.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/87d8f532-4952-4de2-90a5-709088d78d35.png"
+                    },
+                    {
+                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/6e6b2a7d-0f9e-47fb-896c-29895528b78b.jpg"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
 
 ## Description Moudule 
 * The supported file names : ```store-description.twig```
@@ -396,9 +501,30 @@ OR
 * The suppotted snapchat link key must be as ```snapchat``` in ```items``` in ```social_media``` in ```footer```
 * The suppotted phone link key must be as ```phone``` in ```items``` in ```social_media``` in ```footer```
 * The suppotted email link key must be as ```email``` in ```items``` in ```social_media``` in ```footer```
-  
-<img width="1097" alt="image" src="https://user-images.githubusercontent.com/45198998/236625722-e60bb15a-bebf-4530-8cef-8c2213f8ab32.png">
 
+```
+{
+    "modules": [
+        {
+            "id": "301beaa9-8089-4c43-b0a3-cc1e32fa4aae",
+            "storefront_theme_store_id": "e57a0654-7476-428b-b03b-db15c8bd9£41",
+            "storefront_theme_file_id": "c39cc13C-af93-41fe-bf36-9a0c3a41a4e1",
+            "settings": {
+                "title": "وصف المتجر",
+                "desc": "وصف عام للمتجر يبرز أهم المنتجات أو الخدمات التي يقدمها ",
+                "display_social_media": true,
+                "order": 1
+            },
+            "is_draft": 0,
+            "draft_for": null,
+            "is_deleted": 0,
+            "created_at": "2023-02-19T17:27:14.000000Z",
+            "updated_at": "2023-02-23T08:57:48. 000000Z"
+        }
+    ]
+}
+```
+ــ
 
 ## FAQs Moudule
 * The supported file names : ```home-faqs-section.twig```
@@ -409,8 +535,37 @@ OR
 * The supported FAQs title key is ```details_title```
 * The supported FAQs description key is ```details_desc```
 
-<img width="1097" alt="image" src="https://user-images.githubusercontent.com/45198998/236624954-d0f3cb0e-4fb4-4fba-b4cf-28dd8bdd52c6.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "9e0f74b7-08b4-4d58-a946-af9199d30412",
+            "storefront_theme_store_id": "98fafeb0-5811-4c3f-8eef-8f91123aa2b9",
+            "storefront_theme_file_id": "Ebd6b44d-e05a-4541-a296-1cc4381addf5",
+            "settings": {
+                "details_title": "اسئلة متنوعة من عملائنا",
+                "details_desc": "اسئلة العملاء",
+                "details_bg": "#a7291f",
+                "details_video": "https://youtu.be/zC_TbG6H1j0",
+                "details_video_img": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/b437b784-5ec6-4a9e-aOeb-88df59eee£50.png",
+                "details_figure": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/b2081369-69ef-4cf0-99d1-e473cc0582d1.png",
+                "faqs_store_features": [
+                    {
+                        "title": "ما هي آلية الشحن والتوصيل؟",
+                        "answer": ".لعملاء مدينة جدة تأكد من اتمام طلبك قبل الساعة الرابعة عصراً ليصلك الطلب في نفس اليوم"
+                    },
+                    {
+                        "title": "ما الحل في حال تأخر الطلب ؟",
+                        "answer": "في حال تأخر طلبك عن المدة المحددة للشحن"
+                    }
+                ],
+                "order": 8,
+                "is_draft": 0
+            }
+        }
+    ]
+}
+```
 
 ## Testimonials Moudule
 * The supported file names : ```testimonials.twig``` , ```home-reviews-section.twig``` , ```home-testimonials-section.twig```
@@ -421,8 +576,37 @@ OR
 * The supported testimonial item date key is ```date```
 * The supported testimonial item title keys are ```text``` , ```reviews``` , ```client_opinion``` , ```content``` , ```customerReview```
 
-<img width="1105" alt="image" src="https://user-images.githubusercontent.com/45198998/236625663-4490817c-0668-4cec-a314-de8a4aba6e88.png">
-
+```
+{
+    "modules": [
+        {
+            "id": "82cdb3a1-649f-44c3-b448-315cdf£7d4d3",
+            "storefront_theme_store_id": "e57a0654-7476-428b-b03b-db15c8bd9f41",
+            "storefront_theme_file_id": "ba37b0d1-29d5-4948-a939-bea43a798d72",
+            "settings": {
+                "title": "آراء العملاء",
+                "testimonials": [
+                    {
+                        "name": "اسم العميل",
+                        "date": " أيام 5 منذ",
+                        "text": " هنا يضع العميل رأيه أو تقييمه لتجربة الشراء من المتجر"
+                    },
+                    {
+                        "name": "اسم العميل",
+                        "date": " أيام 5 منذ",
+                        "text": " هنا يضع العميل رأيه أو تقييمه لتجربة الشراء من المتجر"
+                    },
+                    {
+                        "name": "اسم العميل",
+                        "date": " أيام 5 منذ",
+                        "text": " هنا يضع العميل رأيه أو تقييمه لتجربة الشراء من المتجر"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
 
 ## Partners Moudule
 * The supported file names : ```partners.twig```
