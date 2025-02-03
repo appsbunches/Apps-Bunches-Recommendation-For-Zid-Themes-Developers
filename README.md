@@ -17,7 +17,7 @@
 * The supported slider item buttom background color key is ```background_color``` if null we will use primary color
 * The supported slider item link key are ```url``` , ```link``` , ```url_button``` , ```video_link```
 
-```
+```json
 {
   "modules": [
     {
@@ -72,7 +72,7 @@
 * The supported gallery item text color key is ```text_color``` , ```textColor``` if null we will use white color
 * The supported gallery item buttom background color key is ```button_color``` if null we will use primary color
 
-```
+```json
 {
   "modules": [
     {
@@ -126,7 +126,7 @@
 * The supported feature item description keys are ```des``` , ```desc```
 * The supported feature item text color key is ```text_color``` if null we will use black color
 
-```
+```json
 {
     "modules": [
         {
@@ -176,7 +176,7 @@
 * The supported products id key is ```id``` it may used if the products related with one category
 * The supported products more button object key is ```more_button``` and contains the ```text``` and ```url```
 
-```
+```json
 {
     "modules": [
         {
@@ -210,7 +210,7 @@
 }
 ```
 OR
-```
+```json
 {
     "modules": [
         {
@@ -260,7 +260,7 @@ OR
 * The supported products in the moudule key is ```products```
 * The supported category display more button key is ```display_more``` it must be boolean if null we will consider it as true
 
-```
+```json
 {
     "modules": [
         {
@@ -304,7 +304,7 @@ OR
 * The supported more text button key is ```more_text```
 * The supported cateogries items keys are ```categories``` , ```category_items``` the first one the category object must be named with ```category``` but in the last one the category object must be named with ```item``` 
 
-```
+```json
 {
     "modules": [
         {
@@ -354,7 +354,7 @@ OR
 * The supported instagram username account key is ```instagram_account```
 * The supported images list key is ```instagram``` and every object must contains ```image``` and ```url```
 
-```
+```json
 {
     "modules": [
         {
@@ -406,7 +406,7 @@ OR
 * The supported banner button text color key is ```button_text_color``` , ```btn_text_color``` if null we will use white color
 * The supported banner button background color key is ```button_bg_color``` , ```button_color``` , ```btn_background_color``` if null we will use primary color
 
-```
+```json
 {
     "modules": [
         {
@@ -445,7 +445,7 @@ OR
 * The supported brand item title key is ```title```
 * The supported brand item url keys are ```url``` , ```link``` , ```url_button``` , ```video_link```
 
-```
+```json
 {
     "modules": [
         {
@@ -502,7 +502,7 @@ OR
 * The suppotted phone link key must be as ```phone``` in ```items``` in ```social_media``` in ```footer```
 * The suppotted email link key must be as ```email``` in ```items``` in ```social_media``` in ```footer```
 
-```
+```json
 {
     "modules": [
         {
@@ -535,7 +535,7 @@ OR
 * The supported FAQs title key is ```details_title```
 * The supported FAQs description key is ```details_desc```
 
-```
+```json
 {
     "modules": [
         {
@@ -576,7 +576,7 @@ OR
 * The supported testimonial item date key is ```date```
 * The supported testimonial item title keys are ```text``` , ```reviews``` , ```client_opinion``` , ```content``` , ```customerReview```
 
-```
+```json
 {
     "modules": [
         {
@@ -616,7 +616,7 @@ OR
 * The supported partner item image key is ```image``` , ```img```
 * The supported partner url image keys are ```url``` , ```link```
 
-```
+```json
 {
     "modules": [
         {
@@ -658,7 +658,7 @@ OR
 * The supported auto play key is ```autoplay``` , ```banner_autoplay``` it should be boolean if null we will consider it as false
 * The supported main title key is ```title``` , ```banner_title```
 
-```
+```json
 {
     "modules": [
         {
