@@ -1,16 +1,25 @@
 # Apps Bunches عناقيد التطبيقات Recommendations for Zid Theme Developers
 
-## Overview
-* This document outlines the best practices and supported file structures for integrating Zid themes with the Apps Bunches mobile application [App Link](https://apps.zid.sa/application/421). By following these recommendations, developers can ensure optimal compatibility, functionality, and user experience.
+## Introduction
 
-# This guide ensures that Zid theme developers follow structured naming conventions and keys for seamless integration with the Apps Bunches mobile app.
+* Welcome to the Apps Bunches Recommendations for Zid Theme Developers! This guide is designed to help  developers seamlessly integrate Zid themes with the Apps Bunches mobile application [App Link](https://apps.zid.sa/application/421), ensuring optimal compatibility, functionality, and a superior user experience.
 
-* Following these guidelines will lead to a smoother development process and an optimized end-user experience.
-* If you have any inquiries, feel free to contact us directly via email at Dev@AppsBunches.com
+* Developing a theme that aligns perfectly with the Apps Bunches app requires attention to detail and adherence to structured naming conventions and key mappings. This document provides a comprehensive overview of the best practices and supported file structures, helping you build themes that function efficiently and look visually appealing across various modules.
+
+## By following these recommendations, developers can ensure:
+* Seamless Integration: Structured file naming and key conventions for effortless compatibility.
+* Consistent User Experience: Maintaining visual coherence across different theme components.
+* Optimized Performance: Enhancing loading speed and responsiveness within the app.
+* Error-Free Development: Reducing potential issues by following predefined standards.
+------------
+
+Each section of this guide breaks down the supported file names, required keys, and additional considerations for sliders, galleries, products, banners, categories, and more. Adhering to these specifications will not only streamline your development process but also guarantee that your theme delivers the best possible experience to end users.
+
+If you have any inquiries, feel free to reach out to us at Dev@AppsBunches.com 
 
 ----------------
 
-## Slider Module
+## 1. Slider Module
 * The supported file names : ```main-slider.twig``` , ```main_slider2.twig``` , ```slider.twig``` , ```sslider.twig``` , ```img-slider.twig``` , ```templete-velvet-main-slider.twig``` , ```slider_img.twig```
 * The supported slider items list key is ```slider```store-description.twig
 * The supported slider items hide dots key is ```hide_dots``` it should be boolean if null we will consider it as true
@@ -65,7 +74,7 @@
 
 
 
-## Gallery Module
+## 2. Gallery Module
 * The supported file names : ```gallery.twig``` , ```ggallery.twig``` , ```template-velvet-gallery.twig``` , ```home-banners-section.twig```
 * The supported gallery items list keys are ```gallery``` , ```ads```
 * The supported gallery main title key is ```title``` , ```banner_title```
@@ -124,7 +133,7 @@
 ```
 
 
-## Feature Module
+## 3. Feature Module
 * The supported file names : ```features.twig``` , ```store-features.twig``` , ```features-section.twig```
 * The supported feature items list keys are ```features``` , ```store_features```
 * The supported feature items background color key is ```bg_color``` if null we will use white color
@@ -172,7 +181,7 @@
 ```
 
 
-## Products Module
+## 4. Products Module
   * The supported file names : ```products.twig``` , ```offers.twig``` , ```products-section.twig``` , ```features-section.twig``` , ```product_grid.twig``` ,```top_picks_products.twig``` , ```bestseller-section.twig``` , ```products-selected.twig``` , ```home-featured-products-section.twig``` , ```section_products.twig``` , ```home-columns-products.twig```
 * The supported products moudule keys are ```products``` , ```last_products```
 * The supported products list in the moudule key is ```products```
@@ -259,7 +268,7 @@ OR
     ]
 }
 ```
-## Category Module
+## 5. Category Module
 * The supported file names : ```category-products-section.twig``` , ```home-category-products.twig``` , ```home-products-section.twig```
 * The supported catgory moudule key is ```category```
 * The supported category id key is ```id``` it used for moving to category page
@@ -303,7 +312,7 @@ OR
 }
 ```
 
-## Categories Module
+## 6. Categories Module
 * The supported file names : ```category-section.twig``` , ```template-velvet-category-section.twig``` , ```home-categories.twig``` , ```categories.twig``` , ```categories_banner.twig``` , ```categories-selected.twig``` , ```home-categories-section.twig```
 * The supported main title keys are ```title``` , ```sectionTitle``` , ```banner_title``` , 
 * The supported sub title key is ```sectionSubTitle``` , ```desc```
@@ -348,14 +357,14 @@ OR
 }
 ```
 
-## Categories with Products Module
+## 7. Categories with Products Module
 * The supported file names : ```product-category.twig``` , ```home-tabs-section.twig```
 * The supported moudule key is ```products``` and must contains a category object named ```category``` and contains products with list named ```products```
 * The supported main title key is ```title``` , ```banner_title```
 * The supported categories display more button key is ```display_more``` it must be boolean if null we will consider it as false
 
 
-## Instagram Moudule
+## 8. Instagram Moudule
 * The supported file names : ```instagram-gallery.twig``` 
 * The supported main title key is ```title```
 * The supported instagram username account key is ```instagram_account```
@@ -400,7 +409,7 @@ OR
 }
 ```
 
-## Banner Moudule
+## 9. Banner Moudule
 * The supported file names : ```banner.twig``` , ```large-banner.twig``` , ```big-banner.twig``` , ```image-with-text.twig``` , ```banner_img.twig```
 * The supported banner image keys are ```mobile_image``` , ```image_mobile``` , ```image``` , ```banner_mobile_image``` , ```banner_image``` , ```img_banner``` , ```image```
 * The supported banner link keys are ```url``` , ```link``` , ```banner_link```
@@ -444,7 +453,7 @@ OR
 }
 ```
 
-## Brand Moudule
+## 10. Brand Moudule
 * The supported file names : ```home-brands-section.twig``` , ```home-brands.twig```
 * The supported brand list key is ```brands```
 * The supported brand list title key is ```title```
@@ -496,7 +505,7 @@ OR
 }
 ```
 
-## Description Moudule 
+## 11. Description Moudule 
 * The supported file names : ```store-description.twig```
 * The supported store title key is ```title```
 * The supported store description keys are ```des``` , ```desc``` 
@@ -533,7 +542,7 @@ OR
 ```
 ــ
 
-## FAQs Moudule
+## 12. FAQs Moudule
 * The supported file names : ```home-faqs-section.twig```
 * The supported FAQs list key is ```faqs_store_features``` and every object should contains ```title``` and ```answer```
 * The supported FAQs background color key is ```details_bg``` if null we will use white color
@@ -574,7 +583,7 @@ OR
 }
 ```
 
-## Testimonials Moudule
+## 13. Testimonials Moudule
 * The supported file names : ```testimonials.twig``` , ```home-reviews-section.twig``` , ```home-testimonials-section.twig```
 * The supported testimonials list keys are ```testimonials``` , ```testimonial``` , ```reviews```
 * The supported main description keys are ```des``` , ```desc```, ```sub_title``` , ```banner_des```
@@ -615,7 +624,7 @@ OR
 }
 ```
 
-## Partners Moudule
+## 14. Partners Moudule
 * The supported file names : ```partners.twig```
 * The supported partners list key is ```store_partners```
 * The supported main title key is ```title``` , ```banner_title```
@@ -658,7 +667,7 @@ OR
 }
 ```
 
-## Video Moudule
+## 15. Video Moudule
 * The supported file names : ```video.twig```
 * The supported video url key is ```video``` , ```banner_video```
 * The supported control buttons visibility key is ```controls``` , ```banner_controls```
@@ -688,13 +697,13 @@ OR
     }
 ```
 
-## Countdown Moudule
+## 16. Countdown Moudule
 * The supported file names : ```countdown_banner.twig```
 * The supported countdown date key is ```countdownDate```
 * The supported countdown banner key is ```countdownImage``` it should be a list of object named ```image```
 
 
-## Icon Box Moudule
+## 17. Icon Box Moudule:
 * The supported file names : ```icon_box.twig```
 * The supported icons box list key is ```infos```
 * The supported icon box key is ```icon```
@@ -703,6 +712,6 @@ OR
 
 ------------------------
 
-* If you have any inquiries, feel free to contact us directly via email at Dev@AppsBunches.com
+If you have any inquiries, feel free to contact us directly via email at Dev@AppsBunches.com
 
-# Thank you!
+# Thank you, and happy developing!
