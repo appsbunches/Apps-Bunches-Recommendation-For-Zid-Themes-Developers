@@ -1,10 +1,5 @@
-# Apps Bunches عناقيد التطبيقات Recommendations for Zid Theme Developers
-
 ## Introduction
-
-* Welcome to the Apps Bunches Recommendations for Zid Theme Developers! This guide is designed to help  developers seamlessly integrate Zid themes with the Apps Bunches mobile application [App Link](https://apps.zid.sa/application/421), ensuring optimal compatibility, functionality, and a superior user experience.
-
-* Developing a theme that aligns perfectly with the Apps Bunches app requires attention to detail and adherence to structured naming conventions and key mappings. This document provides a comprehensive overview of the best practices and supported file structures, helping you build themes that function efficiently and look visually appealing across various modules.
+* Welcome to the Apps Bunches عناقيد التطبيقات Recommendations for Zid Theme Developers! This guide helps developers seamlessly integrate Zid themes with the Apps Bunches mobile application [App Link](https://apps.zid.sa/application/421).
 
 ## By following these recommendations, developers can ensure:
 * Seamless Integration: Structured file naming and key conventions for effortless compatibility.
@@ -13,704 +8,534 @@
 * Error-Free Development: Reducing potential issues by following predefined standards.
 ------------
 
-Each section of this guide breaks down the supported file names, required keys, and additional considerations for sliders, galleries, products, banners, categories, and more. Adhering to these specifications will not only streamline your development process but also guarantee that your theme delivers the best possible experience to end users.
+> ### ⚠️ Important Note for Theme Developers
+> This document lists all file names using the **`.jinja`** extension, which is the standard for **Vitrin themes**.
+> However, the Apps Bunches mobile application fully supports **both** Vitrin themes (`.jinja`) and legacy themes (`.twig`).
+>
+> **If you are developing a legacy theme**, simply replace `.jinja` with `.twig` in all file names listed below — the supported keys and JSON structure remain exactly the same.
+>
+> | Theme Type | File Extension | Example |
+> |---|---|---|
+> | **Vitrin (New)** | `.jinja` | `main-slider.jinja` |
+> | **Legacy** | `.twig` | `main-slider.twig` |
 
 If you have any inquiries, feel free to reach out to us at Dev@AppsBunches.com 
 
 ----------------
 
 ## 1. Slider Module
-* The supported file names : ```main-slider.twig``` , ```main_slider2.twig``` , ```slider.twig``` , ```sslider.twig``` , ```img-slider.twig``` , ```templete-velvet-main-slider.twig``` , ```slider_img.twig```
-* The supported slider items list key is ```slider```store-description.twig
-* The supported slider items hide dots key is ```hide_dots``` it should be boolean if null we will consider it as true
-* The supported slider item type key is ```type``` , ```slider_type``` it must be ```video``` or ```image``` if null we will consider it an image
-* The supported slider item image keys are ```mobile_image``` , ```image_mobile``` , ```image``` , ```img_slider_mobile``` , ```img_slider```
-* The supported slider item vedio keys are ```url``` , ```link``` , ```url_button``` , ```video_link```
-* The supported slider item title key is ```title```
-* The supported slider item sub title keys are ```subtitle``` , ```des```
-* The supported slider item button title key is ```btn_text``` , ```text_button```
-* The supported slider item text color key is ```text_color``` , ```textColor``` if null we will use white color
-* The supported slider item buttom background color key is ```background_color``` if null we will use primary color
-* The supported slider item link key are ```url``` , ```link``` , ```url_button``` , ```video_link```
+* Supported file names: ```main-slider.jinja```, ```main_slider2.jinja```, ```slider.jinja```, ```sslider.jinja```, ```img-slider.jinja```, ```templete-velvet-main-slider.jinja```, ```slider_img.jinja```, ```carousel.jinja```
+* Supported slider items list keys: ```slider```, ```slides```
+* Supported hide dots key: ```hide_dots``` boolean (default: true)
+* Supported autoplay key: ```autoplay```, ```autoplay_enabled``` boolean (default: false)
+* Supported item type key: ```type```, ```slider_type``` — must be ```video``` or ```image``` (default: image)
+* Supported item image keys: ```mobile_image```, ```image_mobile```, ```image```, ```img_slider_mobile```, ```img_slider```, ```background_image_mobile```, ```src_mobile```, ```background_image```
+* Supported item title keys: ```title```, ```heading```, ```image_title```
+* Supported item subtitle keys: ```subtitle```, ```sub_title```, ```des```, ```desc```, ```description```
+* Supported item badge text key: ```badge_text```
+* Supported item overlay opacity key: ```overlay_opacity``` (number 0–100)
+* Supported item text alignment key: ```text_alignment``` (start, center, end)
+* Supported item button text keys: ```btn_text```, ```text_button```, ```button_text```, ```primary_button_text```
+* Supported item secondary button text key: ```secondary_button_text```
+* Supported item secondary button url key: ```secondary_button_url```
+* Supported item text color key: ```text_color```, ```textColor``` (default: white)
+* Supported item button background color key: ```background_color```, ```button_color``` (default: primary)
+* Supported item button text color key: ```button_text_color```, ```buttonTextColor```
+* Supported item link keys: ```url```, ```link```, ```url_button```, ```video_link```, ```primary_button_url```, ```button_url```
+* Supported item alt text key: ```alt```
+* Supported background color key: ```background_color```
+* Supported text color key: ```text_color```
+* Supported title color key: ```title_color```
+* Supported min height mobile key: ```min_height_mobile```
 
 ```json
 {
-  "modules": [
-    {
-      "id": "406b63d8-e1a5-46bb-9a95-089826d78f84",
-      "storefront_theme_store_id": "41460ab1-bbbf-4c59-bb06-542575a4e59a",
-      "storefront_theme_file_id": "7fe32e1d-f0c3-4c6c-ab5f-d3047494a91b",
-      "settings": {
-        "slider": [
-          {
-            "title": "عنوان على الصورة",
-            "des": "النص على الصورة",
-            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/ff65a529-b3e4-4f67-9afe-22dad83ed131.png",
-            "url": "/products/1-النباتات-الاكسسوارات"
-          },
-          {
-            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/73c86dc9-0709-46f7-8dce-21b947c0b861.png",
-            "url": "/products/عمال-الطاقة-الطبيعي-للنساء"
-          },
-          {
-            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/0e1bb51b-9310-49e3-958e-24a839a6ac3b.png"
-          }
-        ],
-        "background_color": "#ff6c40",
-        "text_color": "#fff5f5",
-        "order": 0,
-        "hide_dots": false
-      },
-      "is_draft": 0,
-      "draft_for": null,
-      "is_deleted": 0,
-      "created_at": "2022-04-10T23:33:45.000000Z",
-      "updated_at": "2023-05-06T09:25:46.000000Z"
-    }
-  ]
+  "settings": {
+    "slider": [
+      {
+        "title": "عنوان على الصورة",
+        "des": "النص على الصورة",
+        "image": "https://example.com/image.png",
+        "url": "/products/example",
+        "badge_text": "جديد",
+        "overlay_opacity": 50,
+        "text_alignment": "center",
+        "btn_text": "تسوق الآن",
+        "text_color": "#ffffff",
+        "type": "image"
+      }
+    ],
+    "background_color": "#ff6c40",
+    "text_color": "#fff5f5",
+    "hide_dots": false,
+    "autoplay": true
+  }
 }
-
 ```
 
-
+---
 
 ## 2. Gallery Module
-* The supported file names : ```gallery.twig``` , ```ggallery.twig``` , ```template-velvet-gallery.twig``` , ```home-banners-section.twig```
-* The supported gallery items list keys are ```gallery``` , ```ads```
-* The supported gallery main title key is ```title``` , ```banner_title```
-* The supported gallery item image key is ```image``` , ```img```
-* The supported gallery item link keys are ```url``` , ```link``` , ```url_button``` , ```video_link```
-* The supported gallery item title key is ```title```
-* The supported gallery item sub title keys are ```subtitle``` , ```des``` , ```sub_title```
-* The supported gallery item button visibility key is ```show_button``` it should be boolean if null we will consider it as true
-* The supported gallery item show button with border key is ```full_btn_border``` it should be boolean if null we will consider it as false
-* The supported gallery item button title keys are ```btn_text``` , ```button_text``` , ```buttonText``` , ```text_button```
-* The supported gallery item text color key is ```text_color``` , ```textColor``` if null we will use white color
-* The supported gallery item buttom background color key is ```button_color``` if null we will use primary color
+* Supported file names: ```gallery.jinja```, ```ggallery.jinja```, ```template-velvet-gallery.jinja```, ```home-banners-section.jinja```, ```grid-images.jinja```
+* Supported gallery items list keys: ```gallery```, ```ads```
+* Supported main title keys: ```title```, ```banner_title```, ```section_title```, ```sectionTitle```, ```heading```
+* Supported item image keys: ```image```, ```img```, ```src_mobile```, ```image_mobile```, ```background_image```
+* Supported item link keys: ```url```, ```link```, ```url_button```, ```video_link```, ```primary_button_url```, ```button_url```
+* Supported item title keys: ```title```, ```heading```, ```image_title```
+* Supported item subtitle keys: ```subtitle```, ```sub_title```, ```des```, ```desc```, ```description```
+* Supported item button visibility key: ```show_button``` boolean (default: true)
+* Supported item border-only button key: ```full_btn_border``` boolean (default: false)
+* Supported item button text keys: ```btn_text```, ```button_text```, ```buttonText```, ```text_button```, ```primary_button_text```
+* Supported item secondary button text key: ```secondary_button_text```
+* Supported item secondary button url key: ```secondary_button_url```
+* Supported item text color key: ```text_color```, ```textColor``` (default: white)
+* Supported item button color key: ```button_color```, ```background_color``` (default: primary)
+* Supported item alt text key: ```alt```
 
 ```json
 {
-  "modules": [
-    {
-      "id": "205e9d90-acf2-4123-ab70-0678f513d2c2",
-      "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2a",
-      "storefront_theme_file_id": "472f4d3f-944d-4b66-89c1-a5fc300bcaea",
-      "settings": {
-        "gallery": [
-          {
-            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/fd3631ed-0a8e-40c1-a84c-8489a6f221cb.jpg",
-            "title": "Abdallah Test Abdallah Test Abdallah Test Abdallah Test Abdallah Test Abdallah Test Abdallah Test ",
-            "subtitle": "Test ",
-            "text_color": "#ffffff",
-            "show_button": true,
-            "full_btn_border": true,
-            "button_text": "Abdallah Button Abdallah Button Abdallah Button Abdallah Button ",
-            "button_color": "#ff0000",
-            "url": "/products/عبدالله-تست"
-          },
-          {
-            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/5470e58d-4964-47be-b8b4-14c5259c1cd3.jpg",
-            "title": "Turki",
-            "subtitle": "Turki Description",
-            "text_color": "#ffffff",
-            "show_button": true,
-            "full_btn_border": true,
-            "button_text": "Turki Button",
-            "button_color": "#2500ff",
-            "url": "/products/محمود-:-)"
-          },
-          {
-            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/73ce1bd7-45bf-4c57-b217-73d1599b371e.jpg",
-            "title": "Hosam",
-            "subtitle": "Test"
-          }
-        ]
+  "settings": {
+    "gallery": [
+      {
+        "image": "https://example.com/image.jpg",
+        "title": "عنوان",
+        "subtitle": "وصف",
+        "text_color": "#ffffff",
+        "show_button": true,
+        "full_btn_border": true,
+        "button_text": "اضغط هنا",
+        "button_color": "#ff0000",
+        "url": "/products/example",
+        "alt": "وصف الصورة"
       }
-    }
-  ]
+    ]
+  }
 }
-
 ```
 
+---
 
-## 3. Feature Module
-* The supported file names : ```features.twig``` , ```store-features.twig``` , ```features-section.twig```
-* The supported feature items list keys are ```features``` , ```store_features```
-* The supported feature items background color key is ```bg_color``` if null we will use white color
-* The supported feature item image key is ```image``` , ```img``` it must be not null
-* The supported feature item title keys are ```title``` , ```text```
-* The supported feature item description keys are ```des``` , ```desc```
-* The supported feature item text color key is ```text_color``` if null we will use black color
+## 3. Features Module
+* Supported file names: ```features.jinja```, ```store-features.jinja```, ```features-section.jinja```, ```benefits.jinja```
+* Supported feature items list keys: ```features```, ```store_features```
+* Supported background color keys: ```bg_color```, ```bg_clr```, ```bg_section```, ```bg_clr_features```, ```background_color```, ```section_background``` (default: white)
+* Supported main title keys: ```title```, ```banner_title```, ```section_title```, ```heading```
+* Supported main title color key: ```main_title_clr```
+* Supported main description keys: ```des```, ```desc```, ```sub_title```, ```subtitle```, ```description```, ```section_description```
+* Supported item image keys: ```image_mobile```, ```image```, ```img```, ```icon``` (must not be null)
+* Supported item title keys: ```title```, ```text```
+* Supported item description keys: ```des```, ```desc```, ```description```
+* Supported item text color key: ```text_color``` (default: black)
+* Supported feature title color key: ```title_feature_clr```, ```title_feature_color```
+* Supported feature content color key: ```content_feature_clr```, ```content_feature_color```
+* Supported feature individual bg color key: ```bg_clr_feature```, ```bg_color_feature```
+* Supported title position key: ```position_title```, ```position_content```
+* Supported container type key: ```container_type```, ```display_type```, ```image_direction```
 
 ```json
 {
-    "modules": [
-        {
-            "id": "8392e220-494a-452b-8081-4c{2525eed0e",
-            "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2a",
-            "storefront_theme_file_id": "f8cca0fb-1b0d-45c4-a005-429a192f1793",
-            "settings": {
-                "features": [
-                    {
-                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/0df62d8f-5204-4d4b-b70b-2e1a5ae4862e.png",
-                        "text": "طرق دفع متعددة",
-                        "text_color": "#ff0000"
-                    },
-                    {
-                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/48688ef9-8e4f-4f03-909f-7b4327b338af.png",
-                        "text": "شحن سريع",
-                        "text_color": "#5aff89"
-                    },
-                    {
-                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/d86edf82-b998-4d66-bf62-346a20505fe8.png",
-                        "ضمان بعد الشراء": "text",
-                        "text_color": "#f4e32f"
-                    }
-                ],
-                "bg_color": "#481229",
-                "order": 11
-            },
-            "is_draft": 0,
-            "draft_for": null,
-            "is_deleted": 0,
-            "created_at": "2022-05-25T07:57:44. 000000Z",
-            "updated_at": "2022-09-03T17:28:46.000000Z",
-        }
-    ]
+  "settings": {
+    "title": "مميزاتنا",
+    "features": [
+      {
+        "image": "https://example.com/icon.png",
+        "text": "طرق دفع متعددة",
+        "desc": "وصف الميزة",
+        "text_color": "#ff0000"
+      }
+    ],
+    "bg_color": "#481229",
+    "main_title_clr": "#ffffff"
+  }
 }
 ```
 
+---
 
 ## 4. Products Module
-  * The supported file names : ```products.twig``` , ```offers.twig``` , ```products-section.twig``` , ```features-section.twig``` , ```product_grid.twig``` ,```top_picks_products.twig``` , ```bestseller-section.twig``` , ```products-selected.twig``` , ```home-featured-products-section.twig``` , ```section_products.twig``` , ```home-columns-products.twig```
-* The supported products moudule keys are ```products``` , ```last_products```
-* The supported products list in the moudule key is ```products```
-* The supported products title key is ```name``` , ```name```
-* The supported products display key is ```display``` it must be boolean if null we will consider it as true
-* The supported products url key is ```url```
-* The supported products module type key is ```module_type```
-* The supported products id key is ```id``` it may used if the products related with one category
-* The supported products more button object key is ```more_button``` and contains the ```text``` and ```url```
+* Supported file names: ```products.jinja```, ```offers.jinja```, ```products-section.jinja```, ```product_grid.jinja```, ```top_picks_products.jinja```, ```bestseller-section.jinja```, ```products-selected.jinja```, ```home-featured-products-section.jinja```, ```section_products.jinja```, ```home-columns-products.jinja```, ```custom_product.jinja```
+* Supported products module keys: ```products```, ```last_products```
+* Supported products list in the module key: ```products```
+* Supported title keys: ```title```, ```title_offer```, ```section_title```, ```sectionTitle```, ```banner_title```, ```heading```
+* Supported display key: ```display``` boolean (default: true)
+* Supported display more key: ```display_more``` boolean
+* Supported more text keys: ```more_text```, ```more_button_text```, ```more_button```
+* Supported more text color key: ```more_clr```, ```more_text_color```
+* Supported url key: ```url```
+* Supported module type key: ```module_type```
+* Supported id key: ```id```
+* Supported description keys: ```des```, ```desc```, ```sub_title```, ```description```, ```section_description```
+* Supported description color key: ```desc_section_clr```, ```description_color```
+* Supported title color keys: ```title_section_clr```, ```title_color```
+* Supported background section color key: ```bg_section```
+* Supported container type key: ```container_type```, ```display_type```, ```image_direction```
+* Supported number per row key: ```number_on_sm```, ```number_on_md```, ```number_on_lg```
+* Supported hide dots key: ```hide_dots```
+* Supported title center key: ```title_center```
+* Supported section banner key: ```sectionBanner```
+* Supported section banner link key: ```sectionBannerLink```
+* Supported more button border color key: ```border_button_color```
 
 ```json
 {
-    "modules": [
-        {
-            "id": "81373ec6-8590-4141-b9da-944f4f902036",
-            "storefront_theme_store_id": "93baacfe-19ee-4c66-a3da-9c5f702aaed3",
-            "storefront_theme_file_id": "7de183cb-df6b-411f-b3f5-7f65f6ac7d",
-            "settings": {
-                "title": "منتجات متميزة",
-                "products": [
-                    {
-                        "product": {}
-                    },
-                    {
-                        "product": {}
-                    },
-                    {
-                        "product": {}
-                    }
-                ],
-                "display_more": true,
-                "more_text": "استكشف المزيد ",
-                "order": 7
-            },
-            "is_draft": 0,
-            "draft_for": null,
-            "is_deleted": 0,
-            "created_at": "2022-08-18T08:40:49.000000Z",
-            "updated_at": "2022-08-18T08:41:49.000000Z"
-        }
-    ]
+  "settings": {
+    "title": "منتجات متميزة",
+    "products": {
+      "products": [],
+      "module_type": "sale_products",
+      "url": "/categories/123/"
+    },
+    "display_more": true,
+    "more_text": "استكشف المزيد",
+    "number_on_sm": 2,
+    "hide_dots": false,
+    "title_center": true
+  }
 }
 ```
-OR
-```json
-{
-    "modules": [
-        {
-            "id": "c8a997d6-dd0b-452e-ac69-7b71a776a940",
-            "storefront_theme_store_id": "e63cOadb-5f1d-44cb-9e48-4be4b4065a2a",
-            "storefront_theme_file_id": "d414294d-5b0f-4606-9611-32b8cebb5£64",
-            "settings": {
-                "title": "منتجات عليها عروض",
-                "products": {
-                    "products": [],
-                    "module_type": "sale_products"
-                },
-                "display_more": true,
-                "more_text": " عرض الكل عرض الكل عرض الكل",
-                "order": 12
-            },
-            "is_draft": 0,
-            "draft_for": null,
-            "is_deleted": 0,
-            "created_at": "2022-05-29T09:33:27.000000Z",
-            "updated_at": "2023-02-11T19:01:03.000000Z"
-        },
-        {
-            "id": "e087fa5d-1475-4bd0-be5c-5a58ee2bddc6",
-            "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2a",
-            "storefront_theme_file_id": "d414294d-5b0£-4606-9611-32b8cebb5£64",
-            "settings": {
-                "title": " منتجات عبد الله",
-                "products": {
-                    "products": [],
-                    "url": "/categories/384063/",
-                    "module_type": "products_category"
-                },
-                "more_text": " المزيد المزيد المزيد",
-                "order": 9,
-                "display_more": false
-            }
-        }
-    ]
-}
-```
-## 5. Category Module
-* The supported file names : ```category-products-section.twig``` , ```home-category-products.twig``` , ```home-products-section.twig```
-* The supported catgory moudule key is ```category```
-* The supported category id key is ```id``` it used for moving to category page
-* The supported category name key is ```name```
-* The supported products in the moudule key is ```products```
-* The supported category display more button key is ```display_more``` it must be boolean if null we will consider it as true
 
-```json
-{
-    "modules": [
-        {
-            "id": "2137bd1c-6094-49ff-9641-953c5b31a3db",
-            "storefront_theme_store_id": "41460ab1-bbbf-4c59-bb06-542575a4e59a",
-            "storefront_theme_file_id": "Ob0db37a-7a94-478b-ab8f-bde1912736e2",
-            "settings": {
-                "category": {
-                    "id": 361590,
-                    "name": "حلاوة المانوكا",
-                    "حلاوة- المانوكا ": "slug",
-                    "SE0_category_title": "حلاوة المانوكا",
-                    "SE0_category_description": "حلاوة المانوكا",
-                    "description": null,
-                    "url": "https://1du1fk.zidthemestore.com/categories/361590/LejLaJI=ögX",
-                    "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/eaa78£77-17e3-4ed9-85d£-24e96312d66b-260x260.png",
-                    "image_full_size": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/eaa78f77-17e3-4ed9-85df-24e96312d66b.png",
-                    "img_alt_text": null,
-                    "cover_image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/38514574-a5e6-4cda-a5b1-310699548f42.png",
-                    "products_count": 0,
-                    "sub_categories": [],
-                    "parent_id": null,
-                    "is_published": true,
-                    "products": [],
-                    "module_type": "category_products"
-                },
-                "display_more": true,
-                "more_text": "عرض الكل",
-                "order": 5
-            }
-        }
-    ]
-}
-```
+---
+
+## 5. Category Products Module
+* Supported file names: ```category-products-section.jinja```, ```home-category-products.jinja```, ```home-products-section.jinja```
+* Supported category module key: ```category```
+* Supported category id key: ```id```
+* Supported category name key: ```name```
+* Supported products key: ```products```
+* Supported display more key: ```display_more``` boolean (default: true)
+* Supported more text keys: ```more_text```, ```more_button_text```, ```more_button```
+
+---
 
 ## 6. Categories Module
-* The supported file names : ```category-section.twig``` , ```template-velvet-category-section.twig``` , ```home-categories.twig``` , ```categories.twig``` , ```categories_banner.twig``` , ```categories-selected.twig``` , ```home-categories-section.twig```
-* The supported main title keys are ```title``` , ```sectionTitle``` , ```banner_title``` , 
-* The supported sub title key is ```sectionSubTitle``` , ```desc```
-* The supported categories display more button key is ```display_more``` it must be boolean if null we will consider it as false
-* The supported more text button key is ```more_text```
-* The supported cateogries items keys are ```categories``` , ```category_items``` the first one the category object must be named with ```category``` but in the last one the category object must be named with ```item``` 
+* Supported file names: ```category-section.jinja```, ```template-velvet-category-section.jinja```, ```home-categories.jinja```, ```categories.jinja```, ```categories_banner.jinja```, ```categories-selected.jinja```, ```home-categories-section.jinja```
+* Supported main title keys: ```title```, ```sectionTitle```, ```section_title```, ```banner_title```, ```heading```
+* Supported subtitle keys: ```sectionSubTitle```, ```desc```
+* Supported display more key: ```display_more``` boolean (default: false)
+* Supported more text keys: ```more_text```, ```more_button_text```, ```more_button```
+* Supported more text color key: ```more_clr```, ```more_text_color```
+* Supported categories items keys: ```categories```, ```category_items``` — first uses ```category``` object, second uses ```item```
+* Supported category style key: ```cat_style```
+* Supported container type key: ```container_type```, ```display_type```, ```image_direction```
+* Supported number of items keys: ```number_on_sm```, ```number_on_md```, ```number_on_lg```
+* Supported hide dots key: ```hide_dots```
+* Supported hide navigation key: ```hide_navs```
+* Supported title center key: ```title_center```
+* Supported title color key: ```title_section_clr```
+* Supported description color key: ```desc_section_clr```, ```description_color```
+* Supported background color keys: ```bg_color```, ```bg_clr```, ```bg_section```
+* Supported border button color key: ```border_button_color```
+* Supported hide category names key: ```hide_category_names```
+
+---
+
+## 7. Categories with Products Module (Custom Products Tabs)
+* Supported file names: ```product-category.jinja```, ```home-tabs-section.jinja```, ```products_grid_tabs.jinja```
+* Supported module key: ```products``` — must contain ```category``` object with ```products``` list
+* Supported main title keys: ```title```, ```banner_title```, ```section_title```, ```heading```
+* Supported display more key: ```display_more``` boolean (default: false)
+* Supported more text keys: ```more_text```, ```more_button_text```, ```more_button```
+* Supported title color key: ```title_color```
+* Supported more text color key: ```more_clr```, ```more_text_color```
+* Supported border button color key: ```border_button_color```
+
+**Products Grid Tabs format (```products_grid_tabs.jinja```):**
+* ```tab_1_products``` to ```tab_4_products``` — each is a list of objects containing ```products```
+* ```tab_1_title``` to ```tab_4_title``` — titles for each tab
+
+---
+
+## 8. Instagram Module
+* Supported file names: ```instagram-gallery.jinja```
+* Supported main title key: ```title```
+* Supported instagram username key: ```instagram_account```
+* Supported images list key: ```instagram``` — every object must contain ```image``` and ```url```
 
 ```json
 {
-    "modules": [
-        {
-            "id": "728919e8-d1b9-4ead-8fa8-def9d4525e69",
-            "storefront_theme_store_id": "41460ab1-bbbf-4c59-bb06-542575a4e59a",
-            "storefront_theme_file_id": "572bc314-d75d-4781-88ea-3562b8а4420c",
-            "settings": {
-                "title": "أحدث التصنيفات",
-                "categories": [
-                    {
-                        "category": {},
-                    },
-                    {
-                        "category": {},
-                    },
-                    {
-                        "category": {
-                            "id": 361591,
-                            "name": " بخاخ المانوكا",
-                            "slug": "بخاخ - المانوكا",
-                            "SEO_category_title": "بخاخ المانوكا",
-                            "SE0_category_description": "بخاخ المانوكا",
-                            "description": null,
-                            "uz1": "https://1du1fk.zidthemestore.com/categories/361591/بخاخ - المانوكا",
-                            "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/{1d87001-5e0c-478d-be82-fa426bbc4192-260x260.png",
-                            "image_full_size": "https://media.zid.store/b2d{7841-8071-401e-8883-77C9cb7cd9a1/{1d87001-5e0c-478d-be82-fa426bbc4192.png",
-                            "img_alt_text": null
-                        }
-                    }
-                ]
-            }
-        }
+  "settings": {
+    "title": "تسوق عبر الانستجرام",
+    "instagram_account": "store_name",
+    "instagram": [
+      { "image": "https://example.com/photo.jpg", "url": "/products/example" }
     ]
+  }
 }
 ```
 
-## 7. Categories with Products Module
-* The supported file names : ```product-category.twig``` , ```home-tabs-section.twig```
-* The supported moudule key is ```products``` and must contains a category object named ```category``` and contains products with list named ```products```
-* The supported main title key is ```title``` , ```banner_title```
-* The supported categories display more button key is ```display_more``` it must be boolean if null we will consider it as false
+---
 
-
-## 8. Instagram Moudule
-* The supported file names : ```instagram-gallery.twig``` 
-* The supported main title key is ```title```
-* The supported instagram username account key is ```instagram_account```
-* The supported images list key is ```instagram``` and every object must contains ```image``` and ```url```
+## 9. Banner Module
+* Supported file names: ```banner.jinja```, ```large-banner.jinja```, ```big-banner.jinja```, ```image-with-text.jinja```, ```banner_img.jinja```, ```hero.jinja```, ```banner-image.jinja```
+* Supported image keys: ```mobile_image```, ```image_mobile```, ```image```, ```banner_mobile_image```, ```banner_image```, ```img_banner```, ```background_image_mobile```, ```background_image```
+* Supported link keys: ```url```, ```link```, ```banner_link```, ```button_url```
+* Supported background color keys: ```color```, ```banner_background_color``` (default: white)
+* Supported background banner color key: ```background_banner```
+* Supported title keys: ```title```, ```banner_title```, ```section_title```, ```heading```
+* Supported subtitle keys: ```subtitle```, ```sub_title```, ```des```, ```desc```, ```description```, ```banner_des```, ```section_description```
+* Supported badge text key: ```badge_text```
+* Supported overlay opacity key: ```overlay_opacity``` (0–100)
+* Supported text color keys: ```text_color```, ```textColor```, ```banner_text_color``` (default: white)
+* Supported text position key: ```text_position_right``` boolean
+* Supported button visibility key: ```show_button``` boolean (default: true)
+* Supported button text keys: ```button_text```, ```button```, ```btn_text```, ```primary_button_text```
+* Supported button text color keys: ```button_text_color```, ```btn_text_color``` (default: white)
+* Supported button bg color keys: ```button_bg_color```, ```button_color```, ```btn_background_color``` (default: primary)
+* Supported container type key: ```container_type```, ```display_type```
 
 ```json
 {
-    "modules": [
-        {
-            "id": "Oc4cbf90-efd5-49cb-b515-b5554f2f2b59",
-            "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2a",
-            "storefront_theme_file_id": "42d1455a-b2bf-49b7-b796-ebfe7d704876",
-            "settings": {
-                "title": "تسوق عبر الانتستجرام",
-                "instagram_account": "teejangold",
-                "instagram": [
-                    {
-                        "image": "https://media.zid.store/b2d{7841-8071-401e-8883-77c9cb7cd9a1/9035ffbd-f85f-4691-b837-b76e0807b673.jpg",
-                        "urI": "/shipping-and-payment"
-                    },
-                    {
-                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/093f362b-36de-4516-9de0-b68e16b3ab1d.jpg",
-                        "url": "/faqs"
-                    },
-                    {
-                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/£d3631ed-Oa8e-40c1-a84c-8489a6f221cb.jpg",
-                        "url": "https://www.instagram.com/teejangold/"
-                    },
-                    {
-                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/48688ef9-8e4f-4f03-909f-7b4327b338af.png",
-                        "url": "https://www.youtube.com/"
-                    },
-                    {
-                        "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/cc903a96-f2e9-48b8-9bd9-c5488d44c0c9.jpg",
-                        "ur1": "/categories/445886/ .٣-محمود",
-                        "order": 1
-                    }
-                ]
-            }
-        }
-    ]
+  "settings": {
+    "title": "عنوان البانر",
+    "subtitle": "وصف البانر",
+    "image": "https://example.com/banner.jpg",
+    "mobile_image": "https://example.com/banner-mobile.jpg",
+    "text_color": "#ffffff",
+    "show_button": true,
+    "button_text": "اضغط هنا",
+    "button_bg_color": "#ff0000",
+    "button_text_color": "#ffffff",
+    "url": "/categories/123",
+    "text_position_right": true,
+    "overlay_opacity": 30
+  }
 }
 ```
 
-## 9. Banner Moudule
-* The supported file names : ```banner.twig``` , ```large-banner.twig``` , ```big-banner.twig``` , ```image-with-text.twig``` , ```banner_img.twig```
-* The supported banner image keys are ```mobile_image``` , ```image_mobile``` , ```image``` , ```banner_mobile_image``` , ```banner_image``` , ```img_banner``` , ```image```
-* The supported banner link keys are ```url``` , ```link``` , ```banner_link```
-* The supported banner background color key is ```color``` , ```banner_background_color``` if null we will use white color
-* The supported banner title key is ```title``` , ```banner_title``` , ```sub_title``` , ```banner_des```
-* The supported banner sub title keys are ```subtitle``` , ```des``` , ```desc```
-* The supported banner title text color key is ```text_color``` if null we will use white color
-* The supported banner button visibility key is ```show_button``` it should be boolean if null we will consider it as true
-* The supported banner button title keys are ```button_text``` , ```button``` , ```btn_text```
-* The supported banner button text color key is ```button_text_color``` , ```btn_text_color``` if null we will use white color
-* The supported banner button background color key is ```button_bg_color``` , ```button_color``` , ```btn_background_color``` if null we will use primary color
+---
+
+## 10. Brand Module
+* Supported file names: ```home-brands-section.jinja```, ```home-brands.jinja```
+* Supported brand list key: ```brands```
+* Supported title keys: ```title```, ```banner_title```, ```section_title```, ```heading```
+* Supported brand item image keys: ```image```, ```img```
+* Supported brand item title key: ```title```
+* Supported brand item url keys: ```url```, ```link```, ```url_button```, ```video_link```
+
+---
+
+## 11. Description Module
+* Supported file names: ```store-description.jinja```, ```logo-social.jinja```
+* Supported title keys: ```title```, ```banner_title```, ```section_title```, ```heading```
+* Supported description keys: ```des```, ```desc```, ```sub_title```, ```description```, ```section_description```
+* Supported image key: ```image```
+* Supported title color key: ```title_color```
+* Supported description color key: ```desc_color2```
+* Supported min height mobile key: ```min_height_mobile```
+* Supported social media visibility key: ```display_social_media``` boolean
+* Supported display key: ```display``` boolean
+* Social media links are loaded from ```footer.social_media.items``` (keys: ```tiktok```, ```twitter```, ```instagram```, ```facebook```, ```snapchat```, ```phone```, ```email```)
+
+---
+
+## 12. FAQs Module
+* Supported file names: ```home-faqs-section.jinja```, ```faq.jinja```, ```faqs.jinja```
+* Supported FAQs list keys: ```faqs_store_features```, ```faqs```, ```questions_cart``` — each object should contain ```title``` and ```answer```
+* Supported background color key: ```details_bg``` (default: white)
+* Supported video image key: ```details_video_img```
+* Supported video url key: ```details_video``` (YouTube URL)
+* Supported title key: ```details_title```
+* Supported description key: ```details_desc```
+
+---
+
+## 13. Testimonials Module
+* Supported file names: ```testimonials.jinja```, ```home-reviews-section.jinja```, ```home-testimonials-section.jinja```
+* Supported testimonials list keys: ```testimonials```, ```testimonial```, ```reviews```
+* Supported main title keys: ```title```, ```title_offer```, ```sectionTitle```, ```section_title```, ```banner_title```, ```heading```
+* Supported main description keys: ```des```, ```desc```, ```sub_title```, ```description```, ```banner_des```, ```section_description```
+* Supported main title color key: ```main_title_clr```
+* Supported title position key: ```position_title```, ```position_content```
+* Supported background color keys: ```bg_color```, ```bg_clr```, ```bg_clr_testimonsals```, ```background_color```, ```section_background```
+* Supported hide dots key: ```hide_dots```
+* Supported button color key: ```button_bg_color```, ```button_color```
+* Supported icon color key: ```icon_color```
+* Supported item name keys: ```name```, ```client_name```, ```customer_name```, ```customerName```, ```author```
+* Supported item date key: ```date```
+* Supported item review text keys: ```text```, ```reviews```, ```client_opinion```, ```content```, ```customerReview```
+* Supported item rating key: ```rating``` (numeric, displayed as stars)
 
 ```json
 {
-    "modules": [
-        {
-            "id": "432c7989-6b9a-4833-8d19-ab81383365a2",
-            "storefront_theme_store_id": "e63c0adb-5f1d-44cb-9e48-4be4b4065a2а",
-            "storefront_theme_file_id": "901c0446-2be9-4fc7-ac76-1af6а5585182",
-            "settings": {
-                "text_position_right": true,
-                "title": "Abdallah Abdallah Abdallah ",
-                "subtitle": "Much of the QA",
-                "text_color":"#ffffff",
-                "image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/54526c45-e854-4fa6-8180-d8d57b410ee9.jpg",
-                "mobile_image": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/{d3631ed-Oa8e-40c1-a84c-8489a6{221cb.jpg",
-                "show_button": true,
-                "button_text": "اضغط هنا",
-                "button_bg_color": "#ff0000",
-                "button_text_color": "#d1bffe",
-                "url": "/categories/361591/ بخاخ - المانوك",
-                "order": 2,
-                "is_draft": 0,
-                "draft_for": null,
-                "is_deleted": 0,
-                "created_at": "2022-05-25T07:28:24.000000z",
-                "updated_at": "2022-09-03T17:28:46.000000Z"
-            }
-        }
-    ]
+  "settings": {
+    "title": "آراء العملاء",
+    "testimonials": [
+      {
+        "name": "اسم العميل",
+        "date": "منذ 5 أيام",
+        "text": "رأي العميل",
+        "rating": 5
+      }
+    ],
+    "bg_color": "#f5f5f5",
+    "hide_dots": false
+  }
 }
 ```
 
-## 10. Brand Moudule
-* The supported file names : ```home-brands-section.twig``` , ```home-brands.twig```
-* The supported brand list key is ```brands```
-* The supported brand list title key is ```title```
-* The supported brand item image key is ```image``` , ```img```
-* The supported brand item title key is ```title```
-* The supported brand item url keys are ```url``` , ```link``` , ```url_button``` , ```video_link```
+---
+
+## 14. Partners Module
+* Supported file names: ```partners.jinja```
+* Supported partners list keys: ```store_partners```, ```partners```
+* Supported main title keys: ```title```, ```banner_title```, ```section_title```, ```heading```
+* Supported main description keys: ```des```, ```desc```, ```sub_title```, ```description```, ```banner_des```, ```section_description```
+* Supported title color key: ```main_title_clr```
+* Supported title position key: ```position_title```
+* Supported background color key: ```bg_clr_partners```
+* Supported number per row key: ```number_on_sm```
+* Supported hide dots key: ```hide_dots```
+* Supported hide navigation key: ```hide_navs```
+* Supported item image keys: ```image```, ```img```
+* Supported item url keys: ```url```, ```link```
+
+---
+
+## 15. Video Module
+* Supported file names: ```video.jinja```, ```video-or-Image.jinja```, ```video-product-section.jinja```
+* Supported video url keys: ```video```, ```banner_video```
+* Supported controls visibility keys: ```controls```, ```banner_controls```
+* Supported autoplay keys: ```autoplay```, ```banner_autoplay```, ```autoplay_enabled``` boolean (default: false)
+* Supported main title keys: ```title```, ```banner_title```, ```section_title```, ```heading```
+* Supported poster image key: ```poster_image```
+* Supported image key: ```image```
+
+> **Note:** YouTube URLs are automatically detected and rendered with a YouTube player.
+
+---
+
+## 16. Countdown Module
+* Supported file names: ```countdown_banner.jinja```, ```countdown.jinja```
+* Supported countdown date keys: ```countdownDate```, ```end_date```, ```expiry_date``` (format: yyyy/M/d)
+* Supported countdown image keys: ```countdownImage``` (list of objects with ```image```), ```offer_image```, ```background_image_mobile```, ```background_image```, ```background_image_sm```
+
+---
+
+## 17. Icon Box Module
+* Supported file names: ```icon_box.jinja```
+* Supported icons box list key: ```infos```
+* Supported icon key: ```icon```
+* Supported title key: ```title```
+* Supported description key: ```description```
+
+---
+
+## 18. Trust Payment Module
+* Supported file names: ```trust_payment.jinja```
+* Supported visibility key: ```show_on_mobile``` boolean — only displayed when true
+* Payment methods are loaded from store settings (```footer.paymentMethods```)
+
+---
+
+## 19. Announcement Bar Module
+* Loaded from global store settings (not from individual module settings)
+* Supported display key: ```announcement_bar_display```, ```news_hide```
+* Supported text key: ```announcement_bar_text```
+* Supported text from announcements: ```announcement_bar_announcements``` (array — first item's ```text```)
+* Supported link key: ```announcement_bar_url``` (or first ```announcement_bar_announcements``` item's ```url```)
+* Supported marquee key: ```announcement_bar_move``` boolean
+* Supported background color keys: ```announcement_bar_background_color```, ```announcement_bar_bgcolor```, ```bannerBackgroundColor```, ```news_bg```
+* Supported text color keys: ```announcement_bar_text_color```, ```announcement_bar_textcolor```, ```bannerTextColor```
+
+---
+
+## 20. Advertisement Bar Module
+* Supported visibility key: ```hide_element``` boolean
+* Supported items list key: ```advertisement_bar```
+* Supported item image keys: ```image```, ```img```
+* Supported item title key: ```title```
+* Supported item url keys: ```url```, ```link```
+* Supported background color keys: ```background_color```, ```banner_background_color```
 
 ```json
 {
-    "modules": [
-        {
-            "id": "02e4652e-7£55-457-bb78-4d298cfce7£4",
-            "storefront_theme_store_id": "98fafeb0-5811-4c3f-8eef-8£91123aa2b9",
-            "storefront_theme_file_id": "Oc270de5-5ecc-49c5-abaa-b585fe10cd13",
-            "settings": {
-                "bg_color": "#ffffff",
-                "brands": [
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/dbaad4a3-9869-4£71-8fc2-d6067b£b27£7.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/9db7c6ce-1359-4db3-a1d8-2508c6b32187.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/6ff6e659-b6ab-4aec-ad9c-06ab266013ce.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/b4e34a34-c415-4421-8ee3-01086851cfae.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/a08cd79d-654a-4ece-9067-1be25fed5972.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/6e62cd9c-1a17-4d05-9370-46a875a73f99.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/8d1fd70e-053c-46dd-a36c-13d9fa652269.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/87d8f532-4952-4de2-90a5-709088d78d35.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/d8ecbdd2-0bfd-4172-88a9-69a512dc3e7d/6e6b2a7d-0f9e-47fb-896c-29895528b78b.jpg"
-                    }
-                ]
-            }
-        }
-    ]
+  "settings": {
+    "hide_element": false,
+    "advertisement_bar": [
+      { "image": "https://example.com/ad.png", "title": "عرض خاص", "url": "/offers" }
+    ],
+    "background_color": "#ffffff"
+  }
 }
 ```
 
-## 11. Description Moudule 
-* The supported file names : ```store-description.twig```
-* The supported store title key is ```title```
-* The supported store description keys are ```des``` , ```desc``` 
-* The supported social media visibility key is ```display_social_media```
-* The suppotted titkok link key must be as ```tiktok``` in ```items``` in ```social_media``` in ```footer```
-* The suppotted twitter link key must be as ```twitter``` in ```items``` in ```social_media``` in ```footer```
-* The suppotted instagram link key must be as ```instagram``` in ```items``` in ```social_media``` in ```footer```
-* The suppotted facebook link key must be as ```facebook``` in ```items``` in ```social_media``` in ```footer```
-* The suppotted snapchat link key must be as ```snapchat``` in ```items``` in ```social_media``` in ```footer```
-* The suppotted phone link key must be as ```phone``` in ```items``` in ```social_media``` in ```footer```
-* The suppotted email link key must be as ```email``` in ```items``` in ```social_media``` in ```footer```
+---
 
-```json
-{
-    "modules": [
-        {
-            "id": "301beaa9-8089-4c43-b0a3-cc1e32fa4aae",
-            "storefront_theme_store_id": "e57a0654-7476-428b-b03b-db15c8bd9£41",
-            "storefront_theme_file_id": "c39cc13C-af93-41fe-bf36-9a0c3a41a4e1",
-            "settings": {
-                "title": "وصف المتجر",
-                "desc": "وصف عام للمتجر يبرز أهم المنتجات أو الخدمات التي يقدمها ",
-                "display_social_media": true,
-                "order": 1
-            },
-            "is_draft": 0,
-            "draft_for": null,
-            "is_deleted": 0,
-            "created_at": "2023-02-19T17:27:14.000000Z",
-            "updated_at": "2023-02-23T08:57:48. 000000Z"
-        }
-    ]
-}
-```
-ــ
+## 21. Banner Slider Module
+* Supported banner sliders list key: ```bannerSliders```
+* Each item contains: ```text``` and ```link```
+* Supported background color keys: ```announcement_bar_background_color```, ```bannerBackgroundColor```
+* Supported text color keys: ```announcement_bar_text_color```, ```bannerTextColor```
+* Supported banner height key: ```bannerHeight```
 
-## 12. FAQs Moudule
-* The supported file names : ```home-faqs-section.twig```
-* The supported FAQs list key is ```faqs_store_features``` and every object should contains ```title``` and ```answer```
-* The supported FAQs background color key is ```details_bg``` if null we will use white color
-* The supported FAQs video image key is ```details_video_img```
-* The supported FAQs video url key is ```details_video``` should be a youtube video url
-* The supported FAQs title key is ```details_title```
-* The supported FAQs description key is ```details_desc```
+---
 
-```json
-{
-    "modules": [
-        {
-            "id": "9e0f74b7-08b4-4d58-a946-af9199d30412",
-            "storefront_theme_store_id": "98fafeb0-5811-4c3f-8eef-8f91123aa2b9",
-            "storefront_theme_file_id": "Ebd6b44d-e05a-4541-a296-1cc4381addf5",
-            "settings": {
-                "details_title": "اسئلة متنوعة من عملائنا",
-                "details_desc": "اسئلة العملاء",
-                "details_bg": "#a7291f",
-                "details_video": "https://youtu.be/zC_TbG6H1j0",
-                "details_video_img": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/b437b784-5ec6-4a9e-aOeb-88df59eee£50.png",
-                "details_figure": "https://media.zid.store/d8ecbdd2-Obfd-4172-88a9-69a512dc3e7d/b2081369-69ef-4cf0-99d1-e473cc0582d1.png",
-                "faqs_store_features": [
-                    {
-                        "title": "ما هي آلية الشحن والتوصيل؟",
-                        "answer": ".لعملاء مدينة جدة تأكد من اتمام طلبك قبل الساعة الرابعة عصراً ليصلك الطلب في نفس اليوم"
-                    },
-                    {
-                        "title": "ما الحل في حال تأخر الطلب ؟",
-                        "answer": "في حال تأخر طلبك عن المدة المحددة للشحن"
-                    }
-                ],
-                "order": 8,
-                "is_draft": 0
-            }
-        }
-    ]
-}
-```
+## 22. Availability Bar Module
+* Loaded from global store settings
+* Displays when the store is closed (```closedNow``` and ```isStoreClosed``` both true)
+* Message loaded from ```settings.availability.message```
 
-## 13. Testimonials Moudule
-* The supported file names : ```testimonials.twig``` , ```home-reviews-section.twig``` , ```home-testimonials-section.twig```
-* The supported testimonials list keys are ```testimonials``` , ```testimonial``` , ```reviews```
-* The supported main description keys are ```des``` , ```desc```, ```sub_title``` , ```banner_des```
-* The supported main title keys are ```title``` , ```title_offer``` , ```sectionTitle``` , ```banner_title```
-* The supported testimonial item title keys are ```name``` , ```client_name``` , ```customer_name``` , ```customerName``` , ```author```
-* The supported testimonial item date key is ```date```
-* The supported testimonial item title keys are ```text``` , ```reviews``` , ```client_opinion``` , ```content``` , ```customerReview```
+---
 
-```json
-{
-    "modules": [
-        {
-            "id": "82cdb3a1-649f-44c3-b448-315cdf£7d4d3",
-            "storefront_theme_store_id": "e57a0654-7476-428b-b03b-db15c8bd9f41",
-            "storefront_theme_file_id": "ba37b0d1-29d5-4948-a939-bea43a798d72",
-            "settings": {
-                "title": "آراء العملاء",
-                "testimonials": [
-                    {
-                        "name": "اسم العميل",
-                        "date": " أيام 5 منذ",
-                        "text": " هنا يضع العميل رأيه أو تقييمه لتجربة الشراء من المتجر"
-                    },
-                    {
-                        "name": "اسم العميل",
-                        "date": " أيام 5 منذ",
-                        "text": " هنا يضع العميل رأيه أو تقييمه لتجربة الشراء من المتجر"
-                    },
-                    {
-                        "name": "اسم العميل",
-                        "date": " أيام 5 منذ",
-                        "text": " هنا يضع العميل رأيه أو تقييمه لتجربة الشراء من المتجر"
-                    }
-                ]
-            }
-        }
-    ]
-}
-```
+## Global Settings Keys Reference
 
-## 14. Partners Moudule
-* The supported file names : ```partners.twig```
-* The supported partners list key is ```store_partners```
-* The supported main title key is ```title``` , ```banner_title```
-* The supported main description key is ```des``` , ```desc```, ```sub_title``` , ```banner_des```
-* The supported partner item image key is ```image``` , ```img```
-* The supported partner url image keys are ```url``` , ```link```
+### Colors
+| Key | Fallback Keys | Usage |
+|---|---|---|
+| ```text_color``` | ```textColor```, ```color```, ```banner_text_color``` | Text color |
+| ```title_color``` | ```text_color``` | Title color |
+| ```bg_color``` | ```bg_clr```, ```bg_section```, ```bg_clr_testimonsals```, ```bg_clr_features```, ```text_bg```, ```background_color```, ```section_background``` | Background |
+| ```button_text``` | ```button```, ```btn_text``` | Button label |
+| ```button_bg_color``` | ```button_color```, ```btn_background_color``` | Button background |
+| ```button_text_color``` | ```btn_text_color``` | Button text color |
+| ```options_design``` | — | Design variant |
+| ```fonts_name``` | — | Custom font |
 
-```json
-{
-    "modules": [
-        {
-            "id": "73d6a6af-58df-4f99-8317-10def6c52d6£",
-            "storefront_theme_store_id": "e57a0654-7476-428b-bO3b-db15c8bd9£41",
-            "storefront_theme_file_id": "80f8bf58-6626-4bd3-a8be-80c9b2ff5018",
-            "settings": {
-                "title": " الشركاء",
-                "store_partners": [
-                    {
-                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47f9-821d-834777a00a27.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47f9-821d-834777a00a27.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47£9-821d-834777a00a27.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47f9-821d-834777a00a27.png"
-                    },
-                    {
-                        "image": "https://media.zid.store/b6dc5ae8-f54e-4445-b493-705198135a9f/cd7d12e2-£47e-47£9-821d-834777a00a27.png"
-                    }
-                ],
-                "order": 7,
-                "hide_dots": false
-            },
-            "is_draft": 0
-        }
-    ]
-}
-```
+### Links and Navigation
+| Key | Fallback Keys | Usage |
+|---|---|---|
+| ```links_1_links``` | ```links_urls```, ```links_links```, ```link_groups_items[0].links``` | Footer links 1 |
+| ```links_2_links``` | ```links2_links``` | Footer links 2 |
+| ```links3_links``` | ```links_3_links``` | Footer links 3 |
+| ```links_1_title``` | ```links_title``` | Links 1 title |
+| ```menu_settings_links``` | ```links_1_links```, ```header_links_menu```, ```main_menu_links``` | Menu links |
 
-## 15. Video Moudule
-* The supported file names : ```video.twig```
-* The supported video url key is ```video``` , ```banner_video```
-* The supported control buttons visibility key is ```controls``` , ```banner_controls```
-* The supported auto play key is ```autoplay``` , ```banner_autoplay``` it should be boolean if null we will consider it as false
-* The supported main title key is ```title``` , ```banner_title```
+### Menu Icons
+| Key | Usage |
+|---|---|
+| ```MenuIcons_allProducts``` | All products icon |
+| ```MenuIcons_allCategories``` | All categories icon |
+| ```MenuIcons_newestProducts``` | Newest products icon |
+| ```MenuIcons_onSaleProducts``` | On sale icon |
+| ```MenuIcons_CustomLinks``` | Custom links icon |
+| ```MenuIcons_DeliveryAndPayment``` | Delivery icon |
+| ```MenuIcons_ShoppingCart``` | Cart icon |
 
-```json
-{
-    "modules": [
-        {
-            "id": "c792aa28-6e83-4110-80ae-0b0a649e2ae8",
-            "storefront_theme_store_id": "41460ab1-bbbf-4c59-bb06-542575a4e59a",
-            "storefront_theme_file_id": "f78a572a-9d51-4f02-a400-eabd818f69f7",
-            "settings": {
-                "title": "فيديو تجريبي",
-                "video": "https://media.zid.store/b2df7841-8071-401e-8883-77c9cb7cd9a1/9cb4dabe-8624-4b93-9368-0f4bb89c629c.mp4",
-                "controls": true,
-                "order": 11,
-                "autoplay": false
-            },
-            "is_draft": 0,
-            "draft_for": null,
-            "is_deleted": 0,
-            "created _at": "2023-05-06T13:12:25.000000Z",
-            "updated_at": "2023-05-06T13:12:52. 000000Z"
-    }
-```
+### Menu Options
+| Key | Usage |
+|---|---|
+| ```menuHideDiscount``` / ```menu_hide_discount``` | Hide discount badge |
+| ```menu_settings_show_all_porducts``` | Show all products |
+| ```menu_settings_show_main_menu_mobile``` | Show main menu mobile |
+| ```menu_settings_show_main_category``` | Show main category |
+| ```menu_settings_hide_markat``` | Hide markat |
+| ```menu_show_categories_mobile``` | Show categories mobile |
 
-## 16. Countdown Moudule
-* The supported file names : ```countdown_banner.twig```
-* The supported countdown date key is ```countdownDate```
-* The supported countdown banner key is ```countdownImage``` it should be a list of object named ```image```
+### Header / Footer Colors
+| Key | Usage |
+|---|---|
+| ```colors_header_background_color``` | Header background |
+| ```colors_header_text_color``` | Header text |
+| ```colors_footer_background_color``` | Footer background |
+| ```colors_footer_text_color``` | Footer text |
+| ```header_logo``` | Store logo URL |
 
-
-## 17. Icon Box Moudule:
-* The supported file names : ```icon_box.twig```
-* The supported icons box list key is ```infos```
-* The supported icon box key is ```icon```
-* The supported icon box title key is ```title```
-* The supported icon box description key is ```description```
+### About Us
+| Key | Fallback Keys |
+|---|---|
+| ```about_us_title``` | ```about_title``` |
+| ```about_us_des``` | ```about_des```, ```about_us_about_us``` |
 
 ------------------------
 
 If you have any inquiries, feel free to contact us directly via email at Dev@AppsBunches.com
-
-# Thank you, and happy developing!
